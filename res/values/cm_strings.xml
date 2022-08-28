@@ -257,4 +257,8 @@
     <string name="incall_vibrate_connect_summary">When a call is picked up</string>
     <string name="incall_vibrate_call_wait_summary">When another call comes in during a call</string>
     <string name="incall_vibrate_disconnect_summary">When a call is hung up</string>
+
+    <!-- Game space -->
+    <string name="game_space_title">Game space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>
