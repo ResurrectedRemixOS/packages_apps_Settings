@@ -72,6 +72,9 @@
     <!-- If the Storage Manager settings are enabled. -->
     <bool name="config_storage_manager_settings_enabled">false</bool>
 
+    <!-- Keep the Android System Intelligence Now Playing row on Sound. -->
+    <bool name="config_show_now_playing">true</bool>
+
     <!-- If the support features are enabled. -->
     <bool name="config_support_enabled">false</bool>
 
