@@ -23,6 +23,7 @@ import static com.android.settings.biometrics.BiometricUtils.GatekeeperCredentia
 import android.app.admin.DevicePolicyManager;
 import android.app.admin.PolicyEnforcementInfo;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.hardware.SensorPrivacyManager;
@@ -36,6 +37,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
 import android.text.Html;
+import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
@@ -130,6 +132,16 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
         mFaceManager = getFaceManager();
 
         super.onCreate(savedInstanceState);
+
+        if (isVendorFaceEnroll()) {
+            // Keep challenge/HAT from this activity, but do not show the AOSP
+            // "How to set up Face Unlock" Glif page. Vendor enroll owns the UI.
+            final View content = findViewById(android.R.id.content);
+            if (content != null) {
+                content.setVisibility(View.INVISIBLE);
+            }
+            maybeLaunchVendorEnroll();
+        }
 
         if (savedInstanceState == null
                 && !WizardManagerHelper.isAnySetupWizard(getIntent())
@@ -234,6 +246,7 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                         mSensorId = sensorId;
                         mChallenge = challenge;
                         mFooterBarMixin.getPrimaryButton().setEnabled(true);
+                        maybeLaunchVendorEnroll();
                     } catch (GatekeeperCredentialNotMatchException e) {
                         // Let BiometricEnrollBase#onCreate() to trigger confirmLock()
                         getIntent().removeExtra(ChooseLockSettingsHelper.EXTRA_KEY_GK_PW_HANDLE);
@@ -523,7 +536,27 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
             callback.onChallengeGenerated(0, 0, 0L);
             return;
         }
-        mFaceManager.generateChallenge(mUserId, callback::onChallengeGenerated);
+        mFaceManager.generateChallenge(mUserId, (sensorId, userId, challenge) -> {
+            callback.onChallengeGenerated(sensorId, userId, challenge);
+            maybeLaunchVendorEnroll();
+        });
+    }
+
+    /** True when config_face_enroll points at a package other than Settings. */
+    private boolean isVendorFaceEnroll() {
+        final String flattened = getString(R.string.config_face_enroll);
+        if (TextUtils.isEmpty(flattened)) {
+            return false;
+        }
+        final ComponentName cn = ComponentName.unflattenFromString(flattened);
+        return cn != null && !TextUtils.equals(cn.getPackageName(), getPackageName());
+    }
+
+    private void maybeLaunchVendorEnroll() {
+        if (!isVendorFaceEnroll() || mNextLaunched || mToken == null) {
+            return;
+        }
+        onNextButtonClick(null);
     }
 
     @Override
@@ -533,6 +566,21 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     @Override
     protected Intent getEnrollingIntent() {
+        // Vendor enroll (config_face_enroll outside Settings) owns guide + camera UI.
+        // Skip AOSP FaceEnrollEducation so ColorOS-style enroll is not preceded by
+        // the Pixel "How to set up Face Unlock" page.
+        final String flattened = getString(R.string.config_face_enroll);
+        if (!TextUtils.isEmpty(flattened)) {
+            final ComponentName cn = ComponentName.unflattenFromString(flattened);
+            if (cn != null && !TextUtils.equals(cn.getPackageName(), getPackageName())) {
+                Intent intent = new Intent();
+                intent.setComponent(cn);
+                WizardManagerHelper.copyWizardManagerExtras(getIntent(), intent);
+                intent.putExtra(BiometricUtils.EXTRA_ENROLL_REASON,
+                        getIntent().getIntExtra(BiometricUtils.EXTRA_ENROLL_REASON, -1));
+                return intent;
+            }
+        }
         Intent intent = new Intent(this, FaceEnrollEducation.class);
         WizardManagerHelper.copyWizardManagerExtras(getIntent(), intent);
         intent.putExtra(BiometricUtils.EXTRA_ENROLL_REASON,
