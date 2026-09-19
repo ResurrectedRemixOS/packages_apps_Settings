@@ -376,6 +376,28 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
             return;
         }
 
+        // Vendor enroll (OplusFaceUnlock) returns RESULT_OK / RESULT_FIRST_USER.
+        // Content is hidden, so coming back here looks like a blank screen.
+        if (isVendorFaceEnroll()
+                && (requestCode == BIOMETRIC_FIND_SENSOR_REQUEST
+                        || requestCode == ENROLL_NEXT_BIOMETRIC_REQUEST)) {
+            if (resultCode == RESULT_OK || resultCode == RESULT_FINISHED
+                    || resultCode == RESULT_FIRST_USER) {
+                if (data == null) {
+                    data = new Intent();
+                }
+                data.putExtra(EXTRA_FINISHED_ENROLL_FACE, true);
+                setResult(RESULT_FINISHED, data);
+                finish();
+                return;
+            }
+            if (resultCode == RESULT_CANCELED) {
+                setResult(resultCode, data);
+                finish();
+                return;
+            }
+        }
+
         // If user has skipped or finished enrolling, don't restart enrollment.
         final boolean isEnrollRequest = requestCode == BIOMETRIC_FIND_SENSOR_REQUEST
                 || requestCode == ENROLL_NEXT_BIOMETRIC_REQUEST;
