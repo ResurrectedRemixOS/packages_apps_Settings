@@ -391,7 +391,8 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                 finish();
                 return;
             }
-            if (resultCode == RESULT_CANCELED) {
+            if (resultCode == RESULT_SKIP || resultCode == SetupSkipDialog.RESULT_SKIP
+                    || resultCode == RESULT_CANCELED) {
                 setResult(resultCode, data);
                 finish();
                 return;
