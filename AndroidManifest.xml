@@ -25,6 +25,8 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES" />
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.CONTROL_UI_TRACING" />
@@ -6309,6 +6311,54 @@
                 <action android:name="android.app.appfunctions.AppFunctionService"/>
             </intent-filter>
         </service>
+
+        <!-- Remixer, hosted inside Settings the way Evolver is. -->
+        <activity android:name="Settings$RemixerSettingsActivity"
+                  android:label="@string/remixer_app_name"
+                  android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.resurrection.settings.REMIXER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.order" android:value="-1"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/remixer_dashboard_summary"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.resurrection.settings.RemixerSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_remixer"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true" />
+        </activity>
+
+        <activity android:name="com.resurrection.settings.FontActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_fonts"
+                  android:theme="@style/Theme.Settings" />
+        <activity android:name="com.resurrection.settings.WallpaperActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_wallpapers"
+                  android:theme="@style/Theme.Settings" />
+        <activity android:name="com.resurrection.settings.AccentActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_accents"
+                  android:theme="@style/Theme.Settings" />
+        <activity android:name="com.resurrection.settings.PulseActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_pulse"
+                  android:theme="@style/Theme.Settings" />
+        <activity android:name="com.resurrection.settings.SlimActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_slim"
+                  android:theme="@style/Theme.Settings" />
+        <activity android:name="com.resurrection.settings.HeaderActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_headers"
+                  android:theme="@style/Theme.Settings" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 

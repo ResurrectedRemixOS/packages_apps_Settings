@@ -600,6 +600,8 @@ public class Settings extends SettingsActivity {
     public static class BugReportHandlerPickerActivity extends SettingsActivity { /* empty */ }
 
     // Top level categories for new IA
+    public static class RemixerSettingsActivity extends SettingsActivity {}
+
     public static class NetworkDashboardActivity extends SettingsActivity {
         private static final String TAG = "NetworkDashboardActivity";
         @Override

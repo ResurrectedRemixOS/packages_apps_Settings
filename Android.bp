@@ -55,16 +55,20 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "Remixer/src/**/*.java",
+        "Remixer/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
     javac_shard_size: 50,
     use_resource_processor: true,
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "Remixer/res",
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
     static_libs: [
@@ -102,6 +106,7 @@ android_library {
         "MediaDrmSettingsFlagsLib",
         "Settings-change-ids",
         "SettingsLib",
+        "RRWallpapers-res",
         "SettingsLibActivityEmbedding",
         "SettingsLibService",
         "aconfig_settings_flags_lib",

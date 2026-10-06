@@ -81,6 +81,10 @@ public class DashboardFragmentRegistry {
         PARENT_TO_CATEGORY_KEY_MAP = new ArrayMap<>();
         PARENT_TO_CATEGORY_KEY_MAP.put(TopLevelSettings.class.getName(),
                 CategoryKey.CATEGORY_HOMEPAGE);
+        // Class name as a string so the search provider can start without
+        // loading Remixer. SettingsInitialize runs at pre-boot.
+        PARENT_TO_CATEGORY_KEY_MAP.put("com.resurrection.settings.RemixerSettings",
+                CategoryKey.CATEGORY_REMIXER);
         PARENT_TO_CATEGORY_KEY_MAP.put(
                 NetworkDashboardFragment.class.getName(), CategoryKey.CATEGORY_NETWORK);
         PARENT_TO_CATEGORY_KEY_MAP.put(ConnectedDeviceDashboardFragment.class.getName(),

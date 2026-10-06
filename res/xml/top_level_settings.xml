@@ -27,6 +27,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:order="-136"
+        android:key="top_level_remixer_category"
+        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.resurrection.settings.RemixerSettings"
+            android:icon="@drawable/ic_settings_display_filled"
+            android:key="top_level_remixer"
+            android:order="-160"
+            android:title="@string/remixer_app_name"
+            android:summary="@string/remixer_dashboard_summary"
+            settings:highlightableMenuKey="@string/menu_key_remixer"
+            settings:controller="com.resurrection.settings.TopLevelRemixerSettingsPreferenceController"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-130"
         android:key="top_level_connectivity_category"
         android:layout="@layout/settingslib_expressive_untitled_preference_category">
