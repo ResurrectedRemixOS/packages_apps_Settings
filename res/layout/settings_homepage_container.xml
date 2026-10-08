@@ -80,16 +80,6 @@
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"/>
 
-            <com.resurrection.settings.homepage.HomepageFooterView
-                android:id="@+id/rr_homepage_footer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="16dp"
-                android:paddingBottom="32dp"
-                android:textAppearance="@style/TextAppearance.SettingsLib.BodySmall"
-                android:textColor="@color/settingslib_materialColorOnSurfaceVariant" />
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
