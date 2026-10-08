@@ -6338,23 +6338,23 @@
         <activity android:name="com.resurrection.settings.FontActivity"
                   android:exported="false"
                   android:label="@string/remixer_fonts"
-                  android:theme="@style/Theme.Settings" />
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.WallpaperActivity"
                   android:exported="false"
                   android:label="@string/remixer_wallpapers"
-                  android:theme="@style/Theme.Settings" />
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.AccentActivity"
                   android:exported="false"
                   android:label="@string/remixer_accents"
-                  android:theme="@style/Theme.Settings" />
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.PulseActivity"
                   android:exported="false"
                   android:label="@string/remixer_pulse"
-                  android:theme="@style/Theme.Settings" />
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.HeaderActivity"
                   android:exported="false"
                   android:label="@string/remixer_headers"
-                  android:theme="@style/Theme.Settings" />
+                  android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
