@@ -6351,10 +6351,6 @@
                   android:exported="false"
                   android:label="@string/remixer_pulse"
                   android:theme="@style/Theme.Settings" />
-        <activity android:name="com.resurrection.settings.SlimActivity"
-                  android:exported="false"
-                  android:label="@string/remixer_slim"
-                  android:theme="@style/Theme.Settings" />
         <activity android:name="com.resurrection.settings.HeaderActivity"
                   android:exported="false"
                   android:label="@string/remixer_headers"

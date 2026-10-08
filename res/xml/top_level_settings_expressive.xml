@@ -25,7 +25,7 @@
         android:key="top_level_remixer_category">
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.resurrection.settings.RemixerSettings"
-            android:icon="@drawable/ic_homepage_display"
+            android:icon="@drawable/ic_homepage_remixer"
             android:key="top_level_remixer"
             android:order="-160"
             android:title="@string/remixer_app_name"
