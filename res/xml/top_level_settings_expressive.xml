@@ -20,23 +20,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
-        android:order="-136"
-        android:key="top_level_remixer_category">
-        <com.android.settings.widget.HomepagePreference
-            android:fragment="com.resurrection.settings.RemixerSettings"
-            android:icon="@drawable/ic_homepage_remixer"
-            android:key="top_level_remixer"
-            android:order="-160"
-            android:title="@string/remixer_app_name"
-            android:summary="@string/remixer_dashboard_summary"
-            settings:highlightableMenuKey="@string/menu_key_remixer"
-            settings:controller="com.resurrection.settings.TopLevelRemixerSettingsPreferenceController"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <PreferenceCategory
         android:order="-130"
-        android:key="top_level_connectivity_category">
+        android:key="top_level_connectivity_category"
+        android:title="@string/rr_homepage_connections">
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.network.NetworkDashboardFragment"
             android:icon="@drawable/ic_homepage_network"
@@ -56,11 +44,12 @@
             android:summary="@string/connected_devices_dashboard_default_summary"
             settings:highlightableMenuKey="@string/menu_key_connected_devices"
             settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+    </PreferenceCategory>
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <PreferenceCategory
         android:order="-120"
-        android:key="top_level_personalize_category">
+        android:key="top_level_personalize_category"
+        android:title="@string/rr_homepage_personalize">
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.applications.AppDashboardFragment"
             android:icon="@drawable/ic_homepage_apps"
@@ -126,12 +115,12 @@
             android:summary="@string/wallpaper_dashboard_summary"
             settings:highlightableMenuKey="@string/menu_key_wallpaper"
             settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+    </PreferenceCategory>
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <PreferenceCategory
         android:order="-110"
         android:key="top_level_system_info_category"
-        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+        android:title="@string/rr_homepage_device">
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
             android:icon="@drawable/ic_homepage_storage"
@@ -170,12 +159,12 @@
             android:summary="@string/summary_placeholder"
             settings:highlightableMenuKey="@string/menu_key_about_device"
             settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+    </PreferenceCategory>
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <PreferenceCategory
         android:order="-100"
         android:key="top_level_security_privacy_category"
-        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+        android:title="@string/rr_homepage_privacy">
         <com.android.settings.widget.HomepagePreference
             android:icon="@drawable/ic_homepage_safety_center"
             android:key="top_level_safety_center"
@@ -254,16 +243,16 @@
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
             settings:isPreferenceVisible="@bool/config_show_emergency_settings"
             settings:highlightableMenuKey="@string/menu_key_emergency"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+    </PreferenceCategory>
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="-90"
         android:key="top_level_account_category"/>
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <PreferenceCategory
         android:order="100"
         android:key="top_level_support_category"
-        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+        android:title="@string/rr_homepage_help">
 
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.accessibility.AccessibilitySettings"
@@ -283,6 +272,6 @@
             android:summary="@string/support_summary"
             settings:highlightableMenuKey="@string/menu_key_support"
             settings:controller="com.android.settings.support.SupportPreferenceController"/>
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+    </PreferenceCategory>
 </PreferenceScreen>
 
