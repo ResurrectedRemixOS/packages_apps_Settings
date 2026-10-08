@@ -20,9 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
-    <com.android.settingslib.widget.UntitledPreferenceCategory
+    <com.resurrection.settings.homepage.HomepageExtrasCategory
         android:order="-140"
-        android:key="top_level_device_category"/>
+        android:key="top_level_device_category"
+        android:title="@string/rr_homepage_extras"/>
 
     <PreferenceCategory
         android:order="-130"
