@@ -6359,6 +6359,10 @@
                   android:exported="false"
                   android:label="@string/remixer_udfps"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.QsStyleActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_qs_style"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
