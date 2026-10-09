@@ -85,6 +85,7 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Set;
+import com.resurrection.settings.homepage.HomepageStyle;
 
 /** Settings homepage activity */
 public class SettingsHomepageActivity extends FragmentActivity implements
@@ -115,6 +116,8 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private Set<HomepageLoadedListener> mLoadedListeners;
     private boolean mIsEmbeddingActivityEnabled;
     private boolean mIsTwoPane;
+    /** Homepage style this activity was laid out with. */
+    private String mHomepageStyle;
     // A regular layout shows icons on homepage, whereas a simplified layout doesn't.
     private boolean mIsRegularLayout = true;
 
@@ -253,7 +256,10 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         }
 
         setupEdgeToEdge();
-        setContentView(R.layout.settings_homepage_container);
+        mHomepageStyle = HomepageStyle.get(this);
+        setContentView(HomepageStyle.ORIGINAL.equals(mHomepageStyle)
+                ? R.layout.settings_homepage_container_original
+                : R.layout.settings_homepage_container);
 
         mIsTwoPane = ActivityEmbeddingUtils.isAlreadyEmbedded(this);
 
@@ -313,6 +319,11 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     protected void onStart() {
         ((SettingsApplication) getApplication()).setHomeActivity(this);
         super.onStart();
+        if (mHomepageStyle != null && !mHomepageStyle.equals(HomepageStyle.get(this))) {
+            // Remixer > Theme > Settings style changed while this homepage was stopped.
+            recreate();
+            return;
+        }
         if (mIsEmbeddingActivityEnabled) {
             final SplitController splitController = SplitController.getInstance(this);
             mSplitControllerAdapter = new SplitControllerCallbackAdapter(splitController);

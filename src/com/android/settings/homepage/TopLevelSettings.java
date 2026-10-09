@@ -62,6 +62,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
 import java.util.List;
+import com.resurrection.settings.homepage.HomepageStyle;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
@@ -391,6 +392,9 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private static int getPreferenceLayoutResId(Context context) {
         if (DesktopSettingsUtils.shouldShowTopLevelDeviceCategory(context)) {
             return R.xml.top_level_settings_expressive_desktop;
+        }
+        if (SettingsThemeHelper.isExpressiveTheme(context) && HomepageStyle.isOriginal(context)) {
+            return R.xml.top_level_settings_expressive_original;
         }
 
         return SettingsThemeHelper.isExpressiveTheme(context)
