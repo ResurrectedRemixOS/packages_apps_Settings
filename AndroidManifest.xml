@@ -6355,9 +6355,9 @@
                   android:exported="false"
                   android:label="@string/remixer_headers"
                   android:theme="@style/Theme.Settings.NoActionBar" />
-        <activity android:name="com.resurrection.settings.FingerprintActivity"
+        <activity android:name="com.resurrection.settings.UdfpsActivity"
                   android:exported="false"
-                  android:label="@string/remixer_fingerprint"
+                  android:label="@string/remixer_udfps"
                   android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
