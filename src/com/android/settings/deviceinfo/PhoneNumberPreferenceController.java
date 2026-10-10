@@ -39,7 +39,7 @@ import java.util.List;
 public class PhoneNumberPreferenceController extends BasePreferenceController {
 
     private static final String KEY_PHONE_NUMBER = "phone_number";
-    private static final String KEY_PREFERENCE_CATEGORY = "basic_info_category";
+    private static final String KEY_PREFERENCE_CATEGORY = "device_detail_category";
 
     private final TelephonyManager mTelephonyManager;
     private final SubscriptionManager mSubscriptionManager;
@@ -99,6 +99,7 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         for (int simSlotNumber = 1; simSlotNumber < mTelephonyManager.getPhoneCount();
                 simSlotNumber++) {
             final Preference multiSimPreference = createNewPreference(screen.getContext());
+            multiSimPreference.setLayoutResource(preference.getLayoutResource());
             multiSimPreference.setCopyingEnabled(true);
             multiSimPreference.setOrder(phonePreferenceOrder + simSlotNumber);
             multiSimPreference.setKey(KEY_PHONE_NUMBER + simSlotNumber);

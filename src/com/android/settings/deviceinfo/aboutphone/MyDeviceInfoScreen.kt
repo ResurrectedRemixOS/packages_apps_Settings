@@ -85,10 +85,16 @@ open class MyDeviceInfoScreen :
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
+            // RR: Android version sits in the software card, the rest in "This phone".
+            +PreferenceCategory(
+                key = RR_SOFTWARE_CATEGORY,
+                purpose = R.string.rr_about_software_purpose,
+                title = 0,
+            ) += { +FirmwareVersionScreen.KEY order 42 }
             +PreferenceCategory(
                 key = DEVICE_DETAIL_CATEGORY,
                 purpose = R.string.device_detail_category_purpose,
-                title = R.string.my_device_info_device_details_category_title,
+                title = R.string.rr_about_this_phone,
             ) +=
                 {
                     +HardwareInfoScreen.KEY order 30
@@ -100,7 +106,6 @@ open class MyDeviceInfoScreen :
                     for (i in 0 until activeModemCount) {
                         +ImeiPreference(context, i, activeModemCount, imeiList) order (i + 33)
                     }
-                    +FirmwareVersionScreen.KEY order 42
                 }
         }
 
@@ -110,6 +115,8 @@ open class MyDeviceInfoScreen :
         const val KEY = "my_device_info_pref_screen"
 
         internal const val DEVICE_DETAIL_CATEGORY = "device_detail_category"
+
+        internal const val RR_SOFTWARE_CATEGORY = "rr_software_category"
     }
 }
 // LINT.ThenChange(MyDeviceInfoFragment.java, MyDeviceInfoApiFirstScreen.kt)

@@ -88,6 +88,8 @@ class ImeiPreference(
     override fun bind(preference: Preference, metadata: PreferenceMetadata) {
         super.bind(preference, metadata)
         preference.isCopyingEnabled = true
+        // RR: match the About phone value rows.
+        preference.layoutResource = R.layout.rr_about_value_row
     }
 
     override fun onCreate(context: PreferenceLifecycleContext) {

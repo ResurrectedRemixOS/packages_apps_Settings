@@ -27,15 +27,73 @@
         android:selectable="false"
         settings:isPreferenceVisible="false"/>
 
+    <!-- RR: device hero and hardware grid -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="rr_about_hero"
+        android:layout="@layout/rr_about_hero"
+        android:selectable="false"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="rr_about_specs"
+        android:layout="@layout/rr_about_specs"
+        android:selectable="false"/>
+
+    <!-- RR: software card -->
     <PreferenceCategory
-        android:key="basic_info_category"
+        android:key="rr_software_category"
+        android:selectable="false">
+
+        <com.resurrection.settings.about.SoftwareHeaderPreference
+            android:key="rr_software_header"
+            android:order="0"/>
+
+        <!-- Android version -->
+        <Preference
+            android:key="firmware_version"
+            android:order="42"
+            android:layout="@layout/rr_about_value_row_nav"
+            android:title="@string/firmware_version"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+
+        <com.resurrection.settings.about.AboutInfoPreference
+            android:key="rr_security_patch"
+            android:order="43"
+            android:title="@string/rr_about_security_patch"/>
+
+        <com.resurrection.settings.about.AboutInfoPreference
+            android:key="rr_build_date"
+            android:order="44"
+            android:title="@string/rr_about_build_date"/>
+
+        <com.resurrection.settings.about.AboutInfoPreference
+            android:key="rr_maintainer"
+            android:order="45"
+            android:title="@string/rr_about_maintainer"/>
+
+        <!-- Build number -->
+        <Preference
+            android:key="build_number"
+            android:order="53"
+            android:layout="@layout/rr_about_value_row"
+            android:title="@string/build_number"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
+    </PreferenceCategory>
+
+    <!-- RR: this phone, with Show/Hide for the phone number -->
+    <com.resurrection.settings.about.RevealCategory
+        android:key="device_detail_category"
         android:selectable="false"
-        android:title="@string/my_device_info_basic_info_category_title">
+        android:title="@string/rr_about_this_phone">
 
         <!-- Device name -->
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
             android:order="1"
+            android:layout="@layout/rr_about_value_row_edit"
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -45,6 +103,7 @@
         <Preference
             android:key="branded_account"
             android:order="2"
+            android:layout="@layout/rr_about_value_row"
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
@@ -54,12 +113,115 @@
         <Preference
             android:key="phone_number"
             android:order="3"
+            android:layout="@layout/rr_about_value_row_private"
             android:title="@string/status_number"
             android:summary="@string/summary_placeholder"
             settings:isPreferenceVisible="@bool/config_show_sim_info"
             settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
             settings:enableCopying="true"/>
-    </PreferenceCategory>
+
+        <!-- SIM status -->
+        <Preference
+            android:key="sim_status"
+            android:order="19"
+            android:layout="@layout/rr_about_value_row_nav"
+            android:title="@string/sim_status_title"
+            settings:keywords="@string/keywords_sim_status"
+            android:summary="@string/summary_placeholder"
+            settings:isPreferenceVisible="@bool/config_show_sim_info"
+            settings:controller="com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController"/>
+
+        <!-- Model & hardware -->
+        <Preference
+            android:key="device_model"
+            android:order="30"
+            android:layout="@layout/rr_about_value_row_nav"
+            android:title="@string/model_info"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+            settings:enableCopying="true"
+            settings:keywords="@string/keywords_model_and_hardware"
+            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+
+        <!-- EID -->
+        <com.android.settings.deviceinfo.simstatus.SimEidInfoPreference
+            android:key="eid_info"
+            android:order="31"
+            android:layout="@layout/rr_about_value_row"
+            android:title="@string/status_eid"
+            android:positiveButtonText="@string/dlg_ok"
+            android:dialogLayout="@layout/dialog_eid_status"
+            settings:isPreferenceVisible="@bool/config_show_sim_info"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.simstatus.SimEidPreferenceController"/>
+
+        <!-- IMEI -->
+        <Preference
+            android:key="imei_info"
+            android:order="32"
+            android:layout="@layout/rr_about_value_row"
+            android:title="@string/status_imei"
+            android:summary="@string/summary_placeholder"
+            settings:keywords="@string/keywords_imei_info"
+            settings:enableCopying="true"
+            settings:isPreferenceVisible="@bool/config_show_sim_info"
+            settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
+    </com.resurrection.settings.about.RevealCategory>
+
+    <!-- RR: network, with Show/Hide for the addresses -->
+    <com.resurrection.settings.about.RevealCategory
+        android:key="device_identifiers_category"
+        android:title="@string/rr_about_network">
+
+        <!--IP address -->
+        <Preference
+            android:key="wifi_ip_address"
+            android:order="44"
+            android:layout="@layout/rr_about_value_row_private"
+            android:title="@string/wifi_ip_address"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            settings:enableCopying="true"/>
+
+        <!-- Wi-Fi MAC address -->
+        <Preference
+            android:key="saved_accesspoints_wifi_mac_address"
+            android:order="45"
+            android:layout="@layout/rr_about_value_row_nav"
+            android:title="@string/status_wifi_mac_address"
+            android:summary="@string/view_saved_network"
+            android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
+            settings:enableCopying="false"/>
+
+        <!-- Factory Wi-Fi MAC address -->
+        <Preference
+            android:key="wifi_mac_address"
+            android:order="46"
+            android:layout="@layout/rr_about_value_row_private"
+            android:title="@string/status_device_wifi_mac_address"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            settings:enableCopying="true"/>
+
+        <!-- Bluetooth address -->
+        <Preference
+            android:key="bt_address"
+            android:order="47"
+            android:layout="@layout/rr_about_value_row_private"
+            android:title="@string/status_bt_address"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            settings:enableCopying="true"/>
+
+        <!-- Device up time -->
+        <Preference
+            android:key="up_time"
+            android:order="48"
+            android:layout="@layout/rr_about_value_row"
+            android:title="@string/status_up_time"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"/>
+    </com.resurrection.settings.about.RevealCategory>
 
     <PreferenceCategory
         android:key="legal_category"
@@ -86,122 +248,6 @@
             android:key="safety_info"
             android:order="18"
             android:title="@string/safety_and_regulatory_info"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="device_detail_category"
-        android:selectable="false"
-        android:title="@string/my_device_info_device_details_category_title">
-
-        <!-- SIM status -->
-        <Preference
-            android:key="sim_status"
-            android:order="19"
-            android:title="@string/sim_status_title"
-            settings:keywords="@string/keywords_sim_status"
-            android:summary="@string/summary_placeholder"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController"/>
-
-        <!-- Model & hardware -->
-        <Preference
-            android:key="device_model"
-            android:order="30"
-            android:title="@string/model_info"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-            settings:enableCopying="true"
-            settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-        <!-- EID -->
-        <com.android.settings.deviceinfo.simstatus.SimEidInfoPreference
-            android:key="eid_info"
-            android:order="31"
-            android:title="@string/status_eid"
-            android:positiveButtonText="@string/dlg_ok"
-            android:dialogLayout="@layout/dialog_eid_status"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.simstatus.SimEidPreferenceController"/>
-
-        <!-- IMEI -->
-        <Preference
-            android:key="imei_info"
-            android:order="32"
-            android:title="@string/status_imei"
-            android:summary="@string/summary_placeholder"
-            settings:keywords="@string/keywords_imei_info"
-            settings:enableCopying="true"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-
-        <!-- Android version -->
-        <Preference
-            android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
-
-        <!-- Lineage version -->
-        <Preference
-            android:key="lineage_os_version"
-            android:order="43"
-            android:title="@*lineageos.platform:string/lineage_version"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="device_identifiers_category"
-        android:title="@string/my_device_info_device_identifiers_category_title">
-
-        <!--IP address -->
-        <Preference
-            android:key="wifi_ip_address"
-            android:order="44"
-            android:title="@string/wifi_ip_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Wi-Fi MAC address -->
-        <Preference
-            android:key="saved_accesspoints_wifi_mac_address"
-            android:order="45"
-            android:title="@string/status_wifi_mac_address"
-            android:summary="@string/view_saved_network"
-            android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
-            settings:enableCopying="false"/>
-
-        <!-- Factory Wi-Fi MAC address -->
-        <Preference
-            android:key="wifi_mac_address"
-            android:order="46"
-            android:title="@string/status_device_wifi_mac_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Bluetooth address -->
-        <Preference
-            android:key="bt_address"
-            android:order="47"
-            android:title="@string/status_bt_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Device up time -->
-        <Preference
-            android:key="up_time"
-            android:order="48"
-            android:title="@string/status_up_time"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"/>
 
         <!-- Manual -->
         <Preference
@@ -225,15 +271,6 @@
             android:order="52"
             android:title="@string/fcc_equipment_id"
             android:summary="@string/summary_placeholder"/>
-
-        <!-- Build number -->
-        <Preference
-            android:key="build_number"
-            android:order="53"
-            android:title="@string/build_number"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
