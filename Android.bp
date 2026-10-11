@@ -57,6 +57,8 @@ android_library {
         "src/**/*.kt",
         "Remixer/src/**/*.java",
         "Remixer/src/**/*.kt",
+        // Oplus Clear Voice (vendor/oplus/clearcalling) — not Pixel Framework.
+        ":OplusClearVoice-srcs",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
@@ -69,6 +71,9 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "Remixer/res",
+        // Oplus Clear Voice (symlink → vendor/oplus/clearcalling/res).
+        // Same pattern as AlphaSettings: resources merge into com.android.settings.R.
+        "res-oplus-clearvoice",
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
     static_libs: [

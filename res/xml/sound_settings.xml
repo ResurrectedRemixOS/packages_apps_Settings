@@ -164,6 +164,15 @@
         android:title="@string/sound_audio_category_title">
         <!-- Live Caption -110 and Now Playing -105-->
 
+        <!-- Oplus Clear Voice (vendor/oplus/clearcalling) -->
+        <Preference
+            android:key="clear_voice"
+            android:title="@string/clear_voice_title"
+            android:summary="@string/clear_voice_summary"
+            android:fragment="com.oplus.settings.clearvoice.ClearVoiceSettings"
+            android:order="-108"
+            settings:controller="com.oplus.settings.clearvoice.ClearVoicePreferenceController"/>
+
         <!-- Spatial audio -->
         <Preference
             android:key="spatial_audio_summary"
