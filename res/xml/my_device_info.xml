@@ -51,7 +51,7 @@
         <Preference
             android:key="firmware_version"
             android:order="42"
-            android:layout="@layout/rr_about_value_row_nav"
+            settings:layout="@layout/rr_about_value_row_nav"
             android:title="@string/firmware_version"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
@@ -76,7 +76,7 @@
         <Preference
             android:key="build_number"
             android:order="53"
-            android:layout="@layout/rr_about_value_row"
+            settings:layout="@layout/rr_about_value_row"
             android:title="@string/build_number"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
@@ -93,7 +93,7 @@
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
             android:order="1"
-            android:layout="@layout/rr_about_value_row_edit"
+            settings:layout="@layout/rr_about_value_row_edit"
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -103,7 +103,7 @@
         <Preference
             android:key="branded_account"
             android:order="2"
-            android:layout="@layout/rr_about_value_row"
+            settings:layout="@layout/rr_about_value_row"
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
@@ -113,7 +113,7 @@
         <Preference
             android:key="phone_number"
             android:order="3"
-            android:layout="@layout/rr_about_value_row_private"
+            settings:layout="@layout/rr_about_value_row_private"
             android:title="@string/status_number"
             android:summary="@string/summary_placeholder"
             settings:isPreferenceVisible="@bool/config_show_sim_info"
@@ -124,7 +124,7 @@
         <Preference
             android:key="sim_status"
             android:order="19"
-            android:layout="@layout/rr_about_value_row_nav"
+            settings:layout="@layout/rr_about_value_row_nav"
             android:title="@string/sim_status_title"
             settings:keywords="@string/keywords_sim_status"
             android:summary="@string/summary_placeholder"
@@ -135,7 +135,7 @@
         <Preference
             android:key="device_model"
             android:order="30"
-            android:layout="@layout/rr_about_value_row_nav"
+            settings:layout="@layout/rr_about_value_row_nav"
             android:title="@string/model_info"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
@@ -147,7 +147,7 @@
         <com.android.settings.deviceinfo.simstatus.SimEidInfoPreference
             android:key="eid_info"
             android:order="31"
-            android:layout="@layout/rr_about_value_row"
+            settings:layout="@layout/rr_about_value_row"
             android:title="@string/status_eid"
             android:positiveButtonText="@string/dlg_ok"
             android:dialogLayout="@layout/dialog_eid_status"
@@ -159,7 +159,7 @@
         <Preference
             android:key="imei_info"
             android:order="32"
-            android:layout="@layout/rr_about_value_row"
+            settings:layout="@layout/rr_about_value_row"
             android:title="@string/status_imei"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_imei_info"
@@ -177,7 +177,7 @@
         <Preference
             android:key="wifi_ip_address"
             android:order="44"
-            android:layout="@layout/rr_about_value_row_private"
+            settings:layout="@layout/rr_about_value_row_private"
             android:title="@string/wifi_ip_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -187,7 +187,7 @@
         <Preference
             android:key="saved_accesspoints_wifi_mac_address"
             android:order="45"
-            android:layout="@layout/rr_about_value_row_nav"
+            settings:layout="@layout/rr_about_value_row_nav"
             android:title="@string/status_wifi_mac_address"
             android:summary="@string/view_saved_network"
             android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
@@ -197,7 +197,7 @@
         <Preference
             android:key="wifi_mac_address"
             android:order="46"
-            android:layout="@layout/rr_about_value_row_private"
+            settings:layout="@layout/rr_about_value_row_private"
             android:title="@string/status_device_wifi_mac_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -207,7 +207,7 @@
         <Preference
             android:key="bt_address"
             android:order="47"
-            android:layout="@layout/rr_about_value_row_private"
+            settings:layout="@layout/rr_about_value_row_private"
             android:title="@string/status_bt_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -217,7 +217,7 @@
         <Preference
             android:key="up_time"
             android:order="48"
-            android:layout="@layout/rr_about_value_row"
+            settings:layout="@layout/rr_about_value_row"
             android:title="@string/status_up_time"
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>

@@ -113,7 +113,8 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         for (int simSlotNumber = 0; simSlotNumber < mPreferenceList.size(); simSlotNumber++) {
             final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
             simStatusPreference.setTitle(getPreferenceTitle(simSlotNumber));
-            simStatusPreference.setSummary(getSummary());
+            // RR: the row masks the number until About phone's Show button is pressed.
+            setPhoneNumber(simSlotNumber);
         }
     }
 
