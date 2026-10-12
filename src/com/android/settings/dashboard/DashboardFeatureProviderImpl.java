@@ -87,6 +87,9 @@ import com.android.settingslib.utils.ThreadUtils;
 import com.android.settingslib.widget.AdaptiveIcon;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
+import com.resurrection.settings.homepage.HomepageStyle;
+import com.resurrection.settings.homepage.NeonRingDrawable;
+
 import com.google.common.collect.Iterables;
 
 import java.util.ArrayList;
@@ -562,6 +565,11 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
         if (TextUtils.equals(tile.getGroupKey(), TOP_LEVEL_ACCOUNT_CATEGORY)
                 && iconPackage == null) {
             return drawable;
+        }
+
+        // Resurrected style: entries from other apps get the same accent ring as the live ones.
+        if (!HomepageStyle.isOriginal(mContext)) {
+            return NeonRingDrawable.forTile(mContext, iconDrawable);
         }
 
         ColorScheme scheme = getColorScheme(tile);
