@@ -6401,6 +6401,10 @@
                   android:exported="false"
                   android:label="@string/remixer_clock_faces"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.BootAnimationActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_boot_animation"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
