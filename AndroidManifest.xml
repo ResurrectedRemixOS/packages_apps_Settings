@@ -6405,6 +6405,11 @@
                   android:exported="false"
                   android:label="@string/remixer_boot_animation"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.RingSyncActivity"
+                  android:exported="false"
+                  android:label="@string/ring_sync_title"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
         <activity android:name="com.resurrection.settings.QuickLaunchActivity"
                   android:exported="false"
                   android:label="@string/quick_launch_title"

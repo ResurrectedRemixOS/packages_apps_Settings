@@ -23,7 +23,6 @@ import android.os.SystemClock
 import android.os.UserHandle
 import android.os.UserManager
 import androidx.preference.Preference
-import com.android.internal.app.PlatLogoActivity
 import com.android.settings.R
 import com.android.settings.Utils
 import com.android.settings.contract.TAG_DEVICE_STATE_PREFERENCE
@@ -61,8 +60,9 @@ class FirmwareVersionDetailPreference :
     override fun tags(context: Context) = arrayOf(TAG_DEVICE_STATE_PREFERENCE)
 
     override fun intent(context: Context): Intent? =
+        // RR: Ring sync; it links to Android's own easter egg.
         Intent(Intent.ACTION_MAIN)
-            .setClassName("android", PlatLogoActivity::class.java.name)
+            .setClassName(context.packageName, "com.resurrection.settings.RingSyncActivity")
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
 
     override val supportsWrite = false

@@ -98,8 +98,9 @@ public class FirmwareVersionDetailPreferenceController extends BasePreferenceCon
             }
 
             final Intent intent = new Intent(Intent.ACTION_MAIN)
-                    .setClassName(
-                            "android", com.android.internal.app.PlatLogoActivity.class.getName())
+                    // RR: Ring sync; it links to Android's own easter egg.
+                    .setClassName(mContext.getPackageName(),
+                            "com.resurrection.settings.RingSyncActivity")
                     .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             try {
                 mContext.startActivity(intent);
