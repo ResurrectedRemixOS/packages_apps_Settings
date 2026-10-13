@@ -204,4 +204,9 @@
     <!-- Now Playing row in Sound & vibration -->
     <string name="now_playing_title">Now Playing</string>
     <string name="now_playing_summary">Identify songs playing nearby</string>
+
+    <!-- Face enrollment posture guidance (devices that require a specific posture) -->
+    <string name="face_enrolling_close_to_continue">Fold phone during setup</string>
+    <string name="face_enrolling_close_to_continue_description">The phone must be folded to set up or use Face Unlock</string>
+    <string name="face_enrolling_do_it_later">Do it later</string>
 </resources>
