@@ -6406,6 +6406,10 @@
                        android:value="@string/menu_key_battery"/>
         </activity>
 
+        <service android:name="com.resurrection.settings.backup.BackupJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE"
+                 android:exported="false" />
+
         <activity android:name="com.resurrection.settings.FontActivity"
                   android:exported="false"
                   android:label="@string/remixer_fonts"
