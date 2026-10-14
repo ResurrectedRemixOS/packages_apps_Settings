@@ -90,6 +90,13 @@
             android:title="@*lineageos.platform:string/charging_speed"
             settings:controller="com.android.settings.fuelgauge.ChargingSpeedPreferenceController"
             settings:requiresService="lineagehealth" />
+
+        <!-- RR: charge reports, recorded by SystemUI -->
+        <Preference
+            android:key="rr_charge_reports"
+            android:title="@string/charge_report_title"
+            android:summary="@string/charge_report_summary"
+            android:fragment="com.resurrection.settings.chargereport.ChargeReportSettings" />
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
     <com.android.settingslib.widget.UntitledPreferenceCategory

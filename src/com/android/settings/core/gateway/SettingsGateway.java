@@ -223,6 +223,9 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.resurrection.settings.RemixerSettings;
+import com.resurrection.settings.backup.BackupSettings;
+import com.resurrection.settings.chargereport.ChargeReportSettings;
+import com.resurrection.settings.nowbar.NowBarSettings;
 
 public class SettingsGateway {
 
@@ -367,6 +370,9 @@ public class SettingsGateway {
             StorageDashboardFragment.class.getName(),
             SystemDashboardFragment.class.getName(),
             RemixerSettings.class.getName(),
+            NowBarSettings.class.getName(),
+            BackupSettings.class.getName(),
+            ChargeReportSettings.class.getName(),
             NetworkDashboardFragment.class.getName(),
             ConnectedDeviceDashboardFragment.class.getName(),
             UsbDetailsFragment.class.getName(),

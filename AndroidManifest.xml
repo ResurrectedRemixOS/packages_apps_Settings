@@ -6369,6 +6369,43 @@
                        android:value="true" />
         </activity>
 
+        <activity android:name="Settings$RemixerNowBarActivity"
+                  android:label="@string/now_bar_title"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.resurrection.settings.NOW_BAR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.resurrection.settings.nowbar.NowBarSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_remixer"/>
+        </activity>
+        <activity android:name="Settings$RemixerBackupActivity"
+                  android:label="@string/backup_title"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.resurrection.settings.BACKUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.resurrection.settings.backup.BackupSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_remixer"/>
+        </activity>
+        <activity android:name="Settings$RemixerChargeReportActivity"
+                  android:label="@string/charge_report_title"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.resurrection.settings.CHARGE_REPORTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.resurrection.settings.chargereport.ChargeReportSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_battery"/>
+        </activity>
+
         <activity android:name="com.resurrection.settings.FontActivity"
                   android:exported="false"
                   android:label="@string/remixer_fonts"

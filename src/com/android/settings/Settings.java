@@ -601,6 +601,9 @@ public class Settings extends SettingsActivity {
 
     // Top level categories for new IA
     public static class RemixerSettingsActivity extends SettingsActivity {}
+    public static class RemixerNowBarActivity extends SettingsActivity {}
+    public static class RemixerBackupActivity extends SettingsActivity {}
+    public static class RemixerChargeReportActivity extends SettingsActivity {}
 
     public static class NetworkDashboardActivity extends SettingsActivity {
         private static final String TAG = "NetworkDashboardActivity";
