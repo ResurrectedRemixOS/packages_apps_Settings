@@ -371,11 +371,17 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
      */
     @CallSuper
     protected boolean displayTile(Tile tile) {
-        if (mSuppressInjectedTileKeys != null && tile.hasKey()) {
-            // For suppressing injected tiles for OEMs.
-            return !mSuppressInjectedTileKeys.contains(tile.getKey(getContext()));
+        if (mSuppressInjectedTileKeys == null) {
+            return true;
         }
-        return true;
+        // For suppressing injected tiles for OEMs.
+        if (tile.hasKey() && mSuppressInjectedTileKeys.contains(tile.getKey(getContext()))) {
+            return false;
+        }
+        // RR: tiles without a key, by their activity's class name.
+        final android.content.ComponentName component =
+                tile.getIntent() != null ? tile.getIntent().getComponent() : null;
+        return component == null || !mSuppressInjectedTileKeys.contains(component.getClassName());
     }
 
     /**

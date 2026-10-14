@@ -565,7 +565,10 @@
     <string name="config_grayscale_settings_intent" translatable="false"></string>
 
     <!-- List containing the injected tile keys which are suppressed. -->
-    <string-array name="config_suppress_injected_tile_keys" translatable="false"/>
+    <string-array name="config_suppress_injected_tile_keys" translatable="false">
+        <!-- RR: Pixel Clear Calling needs a Tensor DSP; dcservice re-enables its entry itself. -->
+        <item>com.google.android.apps.pixel.dcservice.feature.audio.settings.CcaSettingsActivity</item>
+    </string-array>
 
     <!-- Reset application package name -->
     <string-array name="config_skip_reset_apps_package_name" translatable="false">
