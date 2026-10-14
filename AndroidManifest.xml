@@ -6452,9 +6452,22 @@
                   android:screenOrientation="portrait"
                   android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.LooksActivity"
-                  android:exported="false"
+                  android:exported="true"
                   android:label="@string/looks_title"
-                  android:theme="@style/Theme.Settings.NoActionBar" />
+                  android:theme="@style/Theme.Settings.NoActionBar">
+            <!-- A look's QR code or link opens the import screen. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="rrlook" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.resurrection.settings.LookScanActivity"
+                  android:exported="false"
+                  android:label="@string/looks_import_scan"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
         <activity android:name="com.resurrection.settings.RingSyncActivity"
                   android:exported="false"
                   android:label="@string/ring_sync_title"
