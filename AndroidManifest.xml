@@ -6463,6 +6463,11 @@
                 <data android:scheme="rrlook" />
             </intent-filter>
         </activity>
+        <activity android:name="com.resurrection.settings.LookEditorActivity"
+                  android:exported="false"
+                  android:label="@string/looks_new"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.LookScanActivity"
                   android:exported="false"
                   android:label="@string/looks_import_scan"
