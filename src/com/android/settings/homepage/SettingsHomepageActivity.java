@@ -33,6 +33,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.ApplicationInfoFlags;
 import android.content.pm.UserInfo;
 import android.content.res.Configuration;
+import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
@@ -48,6 +49,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.core.graphics.ColorUtils;
 import androidx.core.graphics.Insets;
 import androidx.core.util.Consumer;
 import androidx.core.view.ViewCompat;
@@ -268,6 +270,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         mLoadedListeners = new ArraySet<>();
 
         initSearchBarView();
+        initFloatingSearchScrim();
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
         mCategoryMixin = new CategoryMixin(this);
@@ -426,6 +429,24 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         FeatureFactory.getFeatureFactory().getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar,
                         SettingsEnums.SETTINGS_HOMEPAGE);
+    }
+
+    /** Fades the list out under the RR bottom search bar; the original style has none. */
+    private void initFloatingSearchScrim() {
+        final View scrim = findViewById(R.id.rr_search_scrim);
+        final View toolbar = findViewById(R.id.search_action_bar);
+        if (scrim == null || toolbar == null) {
+            return;
+        }
+        // initSearchToolbar hides the card when search is unavailable.
+        if (((View) toolbar.getParent()).getVisibility() != View.VISIBLE) {
+            scrim.setVisibility(View.GONE);
+            return;
+        }
+        final int bg = Utils.getColorAttrDefaultColor(this, android.R.attr.colorBackground);
+        scrim.setBackground(new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,
+                new int[] {bg, ColorUtils.setAlphaComponent(bg, 0xD9),
+                        ColorUtils.setAlphaComponent(bg, 0)}));
     }
 
     private void updateHomepageUI() {

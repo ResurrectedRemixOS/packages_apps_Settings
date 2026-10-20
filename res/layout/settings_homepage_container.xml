@@ -33,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-8dp"
+            android:paddingBottom="84dp"
             android:orientation="vertical">
 
             <com.resurrection.settings.homepage.HomepageTitleView
@@ -42,14 +43,6 @@
                 android:layout_marginTop="28dp"
                 android:paddingStart="?android:attr/listPreferredItemPaddingStart"
                 android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" />
-
-            <include
-                layout="@layout/search_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
-                android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd" />
 
             <com.resurrection.settings.homepage.HomepageHeaderView
                 android:id="@+id/rr_homepage_header"
@@ -101,4 +94,20 @@
             android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
             android:background="?android:attr/colorBackground" />
     </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/rr_search_scrim"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_gravity="bottom"
+        android:importantForAccessibility="no" />
+
+    <include
+        layout="@layout/rr_search_bar_floating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
