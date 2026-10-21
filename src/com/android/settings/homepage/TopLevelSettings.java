@@ -404,13 +404,16 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         if (DesktopSettingsUtils.shouldShowTopLevelDeviceCategory(context)) {
             return R.xml.top_level_settings_expressive_desktop;
         }
-        if (SettingsThemeHelper.isExpressiveTheme(context) && HomepageStyle.isOriginal(context)) {
+        if (!SettingsThemeHelper.isExpressiveTheme(context)) {
+            return R.xml.top_level_settings;
+        }
+        if (HomepageStyle.isOriginal(context)) {
             return R.xml.top_level_settings_expressive_original;
         }
-
-        return SettingsThemeHelper.isExpressiveTheme(context)
-                ? R.xml.top_level_settings_expressive
-                : R.xml.top_level_settings;
+        if (HomepageStyle.isV1(context)) {
+            return R.xml.top_level_settings_expressive_v1;
+        }
+        return R.xml.top_level_settings_expressive;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

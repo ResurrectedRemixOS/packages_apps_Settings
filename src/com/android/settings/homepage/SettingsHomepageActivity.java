@@ -262,9 +262,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
 
         setupEdgeToEdge();
         mHomepageStyle = HomepageStyle.get(this);
-        setContentView(HomepageStyle.ORIGINAL.equals(mHomepageStyle)
-                ? R.layout.settings_homepage_container_original
-                : R.layout.settings_homepage_container);
+        setContentView(homepageLayout(mHomepageStyle));
 
         mIsTwoPane = ActivityEmbeddingUtils.isAlreadyEmbedded(this);
 
@@ -314,6 +312,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         updateSplitLayout();
 
         enableTaskLocaleOverride();
+    }
+
+    private static int homepageLayout(String style) {
+        if (HomepageStyle.ORIGINAL.equals(style)) {
+            return R.layout.settings_homepage_container_original;
+        }
+        if (HomepageStyle.V1.equals(style)) {
+            return R.layout.settings_homepage_container_v1;
+        }
+        return R.layout.settings_homepage_container;
     }
 
     @VisibleForTesting
