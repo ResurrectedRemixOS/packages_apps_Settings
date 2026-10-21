@@ -32,6 +32,7 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.ApplicationInfoFlags;
 import android.content.pm.UserInfo;
+import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
@@ -47,6 +48,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.core.graphics.ColorUtils;
@@ -82,6 +84,7 @@ import com.android.settingslib.Utils;
 import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.net.URISyntaxException;
@@ -447,6 +450,15 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         scrim.setBackground(new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,
                 new int[] {bg, ColorUtils.setAlphaComponent(bg, 0xD9),
                         ColorUtils.setAlphaComponent(bg, 0)}));
+        final boolean night = (getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+        final int accent = getColor(night ? android.R.color.system_accent1_400
+                : android.R.color.system_accent1_600);
+        final MaterialCardView card = (MaterialCardView) toolbar.getParent();
+        card.setStrokeWidth(Math.round(getResources().getDisplayMetrics().density));
+        card.setStrokeColor(ColorUtils.setAlphaComponent(accent, 0x40));
+        ((ImageView) toolbar.findViewById(R.id.imageView)).setImageTintList(
+                ColorStateList.valueOf(accent));
     }
 
     private void updateHomepageUI() {
