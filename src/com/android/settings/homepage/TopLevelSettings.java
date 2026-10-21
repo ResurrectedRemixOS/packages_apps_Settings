@@ -62,6 +62,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
 import java.util.List;
+import com.resurrection.settings.homepage.HomepageGroups;
 import com.resurrection.settings.homepage.HomepageStyle;
 
 @SearchIndexable(forTarget = MOBILE)
@@ -112,7 +113,10 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     public void onAttach(Context context) {
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
-        use(SupportPreferenceController.class).setActivity(getActivity());
+        final SupportPreferenceController support = use(SupportPreferenceController.class);
+        if (support != null) {
+            support.setActivity(getActivity());
+        }
     }
 
     @Override
@@ -345,6 +349,13 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         }
 
         return new RoundCornerPreferenceAdapter(preferenceScreen);
+    }
+
+    @Override
+    protected boolean displayTile(Tile tile) {
+        return super.displayTile(tile)
+                && (getPreferenceScreenResId() != R.xml.top_level_settings_expressive
+                        || HomepageGroups.placeOf(tile) == null);
     }
 
     @Override
