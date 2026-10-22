@@ -292,9 +292,10 @@
         com.android.devicelockcontroller
     </string>
 
-    <!-- Sound picker package name -->
+    <!-- Sound picker package name. GMS replaces the AOSP picker, so the
+         ringtone intent has to name the package that is actually installed. -->
     <string name="config_sound_picker_package_name" translatable="false">
-        com.android.soundpicker
+        com.google.android.soundpicker
     </string>
 
     <!-- Contacts package name -->
