@@ -67,6 +67,7 @@ public class SettingsInitialize extends BroadcastReceiver {
         final PackageManager pm = context.getPackageManager();
         managedProfileSetup(context, pm, broadcast, userInfo);
         cloneProfileSetup(context, pm, userInfo);
+        restoreCloneProfileSettings(context, userInfo);
         webviewSettingSetup(context, pm, userInfo);
         ThreadUtils.postOnBackgroundThread(() -> refreshExistingShortcuts(context));
         enableTwoPaneDeepLinkActivityIfNecessary(pm, context);
@@ -115,6 +116,30 @@ public class SettingsInitialize extends BroadcastReceiver {
         }
 
         Utils.disableComponentsToHideSettings(context, pm);
+    }
+
+    private void restoreCloneProfileSettings(Context context, UserInfo userInfo) {
+        if (userInfo == null || userInfo.isProfile()) {
+            return;
+        }
+        final int cloneUserId = Utils.getCloneUserId(context);
+        if (cloneUserId == -1) {
+            return;
+        }
+        final Context clone = context.createContextAsUser(UserHandle.of(cloneUserId), 0);
+        final PackageManager clonePm = clone.getPackageManager();
+        try {
+            if (clonePm.getApplicationEnabledSetting(context.getPackageName())
+                    != PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER) {
+                return;
+            }
+            Log.i(TAG, "Enabling Settings in clone profile " + cloneUserId);
+            clonePm.setApplicationEnabledSetting(context.getPackageName(),
+                    PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0);
+            Utils.disableComponentsToHideSettings(clone, clonePm);
+        } catch (IllegalArgumentException | SecurityException e) {
+            Log.w(TAG, "Unable to enable Settings in clone profile", e);
+        }
     }
 
     // Disable WebView Setting if the current user is not an admin
