@@ -226,6 +226,7 @@ import com.resurrection.settings.RemixerSettings;
 import com.resurrection.settings.backup.BackupSettings;
 import com.resurrection.settings.chargereport.ChargeReportSettings;
 import com.resurrection.settings.nowbar.NowBarSettings;
+import com.resurrection.settings.nowbar.NowBarShowSettings;
 
 public class SettingsGateway {
 
@@ -371,6 +372,7 @@ public class SettingsGateway {
             SystemDashboardFragment.class.getName(),
             RemixerSettings.class.getName(),
             NowBarSettings.class.getName(),
+            NowBarShowSettings.class.getName(),
             BackupSettings.class.getName(),
             ChargeReportSettings.class.getName(),
             NetworkDashboardFragment.class.getName(),
