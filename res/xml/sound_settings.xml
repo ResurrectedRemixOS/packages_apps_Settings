@@ -162,7 +162,7 @@
         android:key="audio_category"
         android:order="-120"
         android:title="@string/sound_audio_category_title">
-        <!-- Live Caption -110 and Now Playing -105-->
+        <!-- Live Caption -110-->
 
         <!-- Oplus Clear Voice (vendor/oplus/clearcalling) -->
         <Preference
@@ -180,6 +180,17 @@
             android:fragment="com.android.settings.notification.SpatialAudioSettings"
             android:order="-107"
             settings:controller="com.android.settings.notification.SpatialAudioParentPreferenceController"/>
+
+        <!-- ASI only injects its own row on the Pixel Tablet -->
+        <Preference
+            android:key="now_playing"
+            android:title="@string/now_playing_title"
+            android:summary="@string/now_playing_summary"
+            android:order="-105">
+            <intent
+                android:targetPackage="com.google.android.as"
+                android:targetClass="com.google.intelligence.sense.ambientmusic.NowPlayingAmbientMusicSettingsActivity"/>
+        </Preference>
 
         <Preference
             android:key="media_controls"

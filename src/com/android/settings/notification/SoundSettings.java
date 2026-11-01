@@ -67,8 +67,10 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
 
     private static final String EXTRA_OPEN_PHONE_RINGTONE_PICKER =
             "EXTRA_OPEN_PHONE_RINGTONE_PICKER";
-    private static final String KEY_NOW_PLAYING =
-            "dashboard_tile_pref_com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity";
+    private static final String KEY_NOW_PLAYING = "now_playing";
+    private static final Intent NOW_PLAYING_INTENT = new Intent().setClassName(
+            "com.google.android.as",
+            "com.google.intelligence.sense.ambientmusic.NowPlayingAmbientMusicSettingsActivity");
 
     @VisibleForTesting
     static final int STOP_SAMPLE = 1;
@@ -132,14 +134,14 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
 
     private void updateAmbientMusicPref() {
         final PreferenceScreen screen = getPreferenceScreen();
-        if (getContext().getResources().getBoolean(R.bool.config_show_now_playing)
-                || screen == null) {
-            return;
+        if (screen != null && !isNowPlayingAvailable(getContext())) {
+            screen.removePreferenceRecursively(KEY_NOW_PLAYING);
         }
-        final Preference preference = screen.findPreference(KEY_NOW_PLAYING);
-        if (preference != null) {
-            screen.removePreference(preference);
-        }
+    }
+
+    private static boolean isNowPlayingAvailable(Context context) {
+        return context.getResources().getBoolean(R.bool.config_show_now_playing)
+                && NOW_PLAYING_INTENT.resolveActivity(context.getPackageManager()) != null;
     }
 
     @Override
@@ -317,7 +319,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-                    if (!context.getResources().getBoolean(R.bool.config_show_now_playing)) {
+                    if (!isNowPlayingAvailable(context)) {
                         keys.add(KEY_NOW_PLAYING);
                     }
                     return keys;

@@ -200,4 +200,8 @@
     <!-- Wake gestures haptics -->
     <string name="doze_gesture_vibrate_title">Haptic feedback</string>
     <string name="doze_gesture_vibrate_summary">Vibrate when this gesture is invoked</string>
+
+    <!-- Now Playing row in Sound & vibration -->
+    <string name="now_playing_title">Now Playing</string>
+    <string name="now_playing_summary">Identify songs playing nearby</string>
 </resources>
