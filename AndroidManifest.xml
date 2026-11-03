@@ -4434,40 +4434,6 @@
                 android:value="true" />
         </activity>
 
-        <!-- Oplus Clear Voice (vendor/oplus/clearcalling) -->
-        <activity
-            android:name="com.oplus.settings.clearvoice.ClearVoiceSettingsActivity"
-            android:label="@string/clear_voice_title"
-            android:exported="true"
-            android:knownActivityEmbeddingCerts="@array/config_known_host_certs"
-            android:enableOnBackInvokedCallback="true">
-            <intent-filter android:priority="1">
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.oplus.settings.clearvoice.ClearVoiceSettings" />
-            <meta-data
-                android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
-                android:value="@string/menu_key_sound"/>
-            <meta-data
-                android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
-        </activity>
-
-        <!-- Oplus Clear Voice QS tile (vendor/oplus/clearcalling) -->
-        <service
-            android:name="com.oplus.settings.clearvoice.ClearVoiceTileService"
-            android:label="@string/clear_voice_qs_tile_label"
-            android:icon="@drawable/ic_clear_voice_qs"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
-        </service>
-
         <activity
             android:name="Settings$VibrationSettingsActivity"
             android:label="@string/accessibility_vibration_settings_title"
