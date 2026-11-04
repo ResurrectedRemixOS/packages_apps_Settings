@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">بازخورد لمسی</string>
     <string name="now_playing_title">"درحال پخش"</string>
+    <string name="doze_gesture_ambient_title">نمایش حالت محیطی</string>
+    <string name="doze_gesture_ambient_summary">به‌جای روشن کامل صفحه، نمایش حالت محیطی را نشان بده</string>
+    <string name="gesture_wake_ambient">نمایش حالت محیطی</string>
+    <string name="gesture_wake">روشن کامل</string>
+    <string name="doze_gesture_vibrate_summary">هنگام اجرای این حرکت ویبره کن</string>
+    <string name="now_playing_summary">شناسایی آهنگ‌هایی که در اطراف پخش می‌شوند</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">தொடு பின்னூட்டம்</string>
     <string name="now_playing_title">"பாடல் விவரம்"</string>
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">முழுமையாக எழுப்புவதற்குப் பதிலாக Ambient Display காட்டு</string>
+    <string name="gesture_wake_ambient">Show Ambient</string>
+    <string name="gesture_wake">முழுமையாக எழுப்பு</string>
+    <string name="doze_gesture_vibrate_summary">இந்தச் சைகை பயன்படுத்தப்படும்போது அதிர்வு</string>
+    <string name="now_playing_summary">அருகில் இசைக்கப்படும் பாடல்களை அடையாளம் காண்</string>
 </resources>

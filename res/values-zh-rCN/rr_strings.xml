@@ -6,4 +6,6 @@
     <string name="gesture_wake">完全唤醒</string>
     <string name="doze_gesture_vibrate_title">触觉反馈</string>
     <string name="now_playing_title">"闻曲知音"</string>
+    <string name="doze_gesture_vibrate_summary">触发此手势时振动</string>
+    <string name="now_playing_summary">识别附近播放的歌曲</string>
 </resources>

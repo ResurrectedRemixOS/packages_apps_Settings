@@ -6,4 +6,6 @@
     <string name="gesture_wake">Teljes ébresztés</string>
     <string name="doze_gesture_vibrate_title">Érintési visszajelzés</string>
     <string name="doze_gesture_vibrate_summary">Rezgő visszajelzés, amikor ezt a vezérlőt aktiválják</string>
+    <string name="now_playing_title">Most játszott</string>
+    <string name="now_playing_summary">Közelben szóló dalok azonosítása</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">التعليقات اللمسية</string>
     <string name="now_playing_title">"التعرف التلقائي على الموسيقى"</string>
+    <string name="doze_gesture_ambient_title">إظهار شاشة العرض المحيطة</string>
+    <string name="doze_gesture_ambient_summary">إظهار شاشة العرض المحيطة بدلًا من تشغيل الشاشة بالكامل</string>
+    <string name="gesture_wake_ambient">إظهار شاشة العرض المحيطة</string>
+    <string name="gesture_wake">تشغيل كامل</string>
+    <string name="doze_gesture_vibrate_summary">الاهتزاز عند تنفيذ هذه الإيماءة</string>
+    <string name="now_playing_summary">تحديد الأغاني المسموعة قريبًا</string>
 </resources>

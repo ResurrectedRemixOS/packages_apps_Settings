@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Getaran balik</string>
     <string name="now_playing_title">"आस-पास चल रहे संगीत का पता लगाने की सुविधा"</string>
+    <string name="doze_gesture_ambient_title">एंबिएंट दिखाएं</string>
+    <string name="doze_gesture_ambient_summary">स्क्रीन को पूरी तरह जगाने के बजाय एंबिएंट डिस्प्ले दिखाएं</string>
+    <string name="gesture_wake_ambient">एंबिएंट दिखाएं</string>
+    <string name="gesture_wake">पूरी तरह जगाएं</string>
+    <string name="doze_gesture_vibrate_summary">इस जेस्चर के चलने पर वाइब्रेट करें</string>
+    <string name="now_playing_summary">आस-पास बज रहे गाने पहचानें</string>
 </resources>

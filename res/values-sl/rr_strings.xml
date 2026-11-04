@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptični odziv</string>
     <string name="now_playing_title">"Zdaj se predvaja"</string>
+    <string name="doze_gesture_ambient_title">Prikaži Ambient</string>
+    <string name="doze_gesture_ambient_summary">Prikaži zaslon pripravljenosti namesto popolne prebuditve zaslona</string>
+    <string name="gesture_wake_ambient">Prikaži Ambient</string>
+    <string name="gesture_wake">Popolnoma prebudi</string>
+    <string name="doze_gesture_vibrate_summary">Vibriraj ob uporabi te poteze</string>
+    <string name="now_playing_summary">Prepoznaj pesmi, ki se predvajajo v bližini</string>
 </resources>

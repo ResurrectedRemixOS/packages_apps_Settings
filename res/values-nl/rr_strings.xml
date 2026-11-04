@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Trillen</string>
+    <string name="doze_gesture_ambient_title">Ambient tonen</string>
+    <string name="doze_gesture_ambient_summary">Ambient-weergave tonen in plaats van het scherm volledig in te schakelen</string>
+    <string name="gesture_wake_ambient">Ambient tonen</string>
+    <string name="gesture_wake">Volledig wekken</string>
+    <string name="doze_gesture_vibrate_summary">Trillen wanneer dit gebaar wordt uitgevoerd</string>
+    <string name="now_playing_title">Nu aan het afspelen</string>
+    <string name="now_playing_summary">Nummers in de buurt herkennen</string>
 </resources>

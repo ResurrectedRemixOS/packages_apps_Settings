@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">משוב רטט</string>
     <string name="now_playing_title">"מה שומעים עכשיו?"</string>
+    <string name="doze_gesture_ambient_title">הצג תצוגת סביבה</string>
+    <string name="doze_gesture_ambient_summary">הצג את תצוגת הסביבה במקום להפעיל את המסך במלואו</string>
+    <string name="gesture_wake_ambient">הצג תצוגת סביבה</string>
+    <string name="gesture_wake">הפעל לגמרי</string>
+    <string name="doze_gesture_vibrate_summary">רטט כשמחווה זו מופעלת</string>
+    <string name="now_playing_summary">זהה שירים שמתנגנים בקרבת מקום</string>
 </resources>

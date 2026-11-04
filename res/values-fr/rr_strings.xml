@@ -6,4 +6,6 @@
     <string name="gesture_wake">Réveil complet</string>
     <string name="doze_gesture_vibrate_title">Retour haptique</string>
     <string name="now_playing_title">"En écoute"</string>
+    <string name="doze_gesture_vibrate_summary">Vibrer lorsque ce geste est déclenché</string>
+    <string name="now_playing_summary">Identifier les morceaux diffusés à proximité</string>
 </resources>

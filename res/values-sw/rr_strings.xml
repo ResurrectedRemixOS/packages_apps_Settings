@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Kitambua Ngoma"</string>
+    <string name="doze_gesture_ambient_title">Onyesha Ambient</string>
+    <string name="doze_gesture_ambient_summary">Onyesha Skrini ya Ambient badala ya kuamsha skrini kikamilifu</string>
+    <string name="gesture_wake_ambient">Onyesha Ambient</string>
+    <string name="gesture_wake">Amsha kikamilifu</string>
+    <string name="doze_gesture_vibrate_title">Mtetemo wa kugusa</string>
+    <string name="doze_gesture_vibrate_summary">Tetema ishara hii inapotumika</string>
+    <string name="now_playing_summary">Tambua nyimbo zinazocheza karibu</string>
 </resources>

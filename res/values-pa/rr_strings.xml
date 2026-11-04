@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">ਐਂਬੀਐਂਟ ਦਿਖਾਓ</string>
+    <string name="doze_gesture_ambient_summary">ਸਕ੍ਰੀਨ ਪੂਰੀ ਤਰ੍ਹਾਂ ਜਗਾਉਣ ਦੀ ਬਜਾਏ ਐਂਬੀਐਂਟ ਡਿਸਪਲੇ ਦਿਖਾਓ</string>
+    <string name="gesture_wake_ambient">ਐਂਬੀਐਂਟ ਦਿਖਾਓ</string>
+    <string name="gesture_wake">ਪੂਰੀ ਤਰ੍ਹਾਂ ਜਗਾਓ</string>
+    <string name="doze_gesture_vibrate_title">ਹੈਪਟਿਕ ਫੀਡਬੈਕ</string>
+    <string name="doze_gesture_vibrate_summary">ਇਹ ਇਸ਼ਾਰਾ ਵਰਤਣ ʼਤੇ ਵਾਈਬ੍ਰੇਟ ਕਰੋ</string>
+    <string name="now_playing_title">ਹੁਣ ਚੱਲ ਰਿਹਾ ਹੈ</string>
+    <string name="now_playing_summary">ਨੇੜੇ ਵੱਜ ਰਹੇ ਗਾਣਿਆਂ ਦੀ ਪਛਾਣ ਕਰੋ</string>
+</resources>

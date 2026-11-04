@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Απτική ανάδραση</string>
     <string name="now_playing_title">"Ακούγεται τώρα"</string>
+    <string name="doze_gesture_ambient_title">Εμφάνιση Ambient</string>
+    <string name="doze_gesture_ambient_summary">Εμφάνιση της οθόνης Ambient αντί για πλήρη αφύπνιση της οθόνης</string>
+    <string name="gesture_wake_ambient">Εμφάνιση Ambient</string>
+    <string name="gesture_wake">Πλήρης αφύπνιση</string>
+    <string name="doze_gesture_vibrate_summary">Δόνηση όταν εκτελείται αυτή η χειρονομία</string>
+    <string name="now_playing_summary">Αναγνώριση τραγουδιών που παίζουν κοντά</string>
 </resources>

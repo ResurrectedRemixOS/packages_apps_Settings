@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Вібраводгук</string>
     <string name="now_playing_title">"Зараз іграе"</string>
+    <string name="doze_gesture_ambient_title">Паказваць Ambient</string>
+    <string name="doze_gesture_ambient_summary">Паказваць Ambient Display замест поўнага пробуджэння экрана</string>
+    <string name="gesture_wake_ambient">Паказваць Ambient</string>
+    <string name="gesture_wake">Поўнае пробуджэнне</string>
+    <string name="doze_gesture_vibrate_summary">Вібраваць пры выкананні гэтага жэста</string>
+    <string name="now_playing_summary">Распазнаваць песні, якія іграюць побач</string>
 </resources>

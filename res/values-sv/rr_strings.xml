@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptisk feedback</string>
     <string name="now_playing_title">"Nu spelas"</string>
+    <string name="doze_gesture_ambient_title">Visa viloläge</string>
+    <string name="doze_gesture_ambient_summary">Visa viloläge i stället för att väcka skärmen helt</string>
+    <string name="gesture_wake_ambient">Visa viloläge</string>
+    <string name="gesture_wake">Väck helt</string>
+    <string name="doze_gesture_vibrate_summary">Vibrera när denna gest utförs</string>
+    <string name="now_playing_summary">Identifiera låtar som spelas i närheten</string>
 </resources>

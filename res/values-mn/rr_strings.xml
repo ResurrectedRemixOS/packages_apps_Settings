@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Ambient харуулах</string>
+    <string name="doze_gesture_ambient_summary">Дэлгэцийг бүрэн асаахын оронд Ambient Display харуулах</string>
+    <string name="gesture_wake_ambient">Ambient харуулах</string>
+    <string name="gesture_wake">Бүрэн сэрээх</string>
+    <string name="doze_gesture_vibrate_title">Хариу чичиргээ</string>
+    <string name="doze_gesture_vibrate_summary">Энэ зангааг ашиглах үед чичрэх</string>
+    <string name="now_playing_title">Одоо тоглуулж буй</string>
+    <string name="now_playing_summary">Ойролцоо тоглуулж буй дууг таних</string>
+</resources>

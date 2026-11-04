@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Trenutno svira"</string>
+    <string name="doze_gesture_ambient_title">Prikaži Ambient</string>
+    <string name="doze_gesture_ambient_summary">Prikaži Ambient prikaz umesto potpunog buđenja ekrana</string>
+    <string name="gesture_wake_ambient">Prikaži Ambient</string>
+    <string name="gesture_wake">Potpuno probudi</string>
+    <string name="doze_gesture_vibrate_summary">Vibriraj kada se ova radnja aktivira</string>
+    <string name="now_playing_summary">Prepoznaj pesme koje se reprodukuju u blizini</string>
 </resources>

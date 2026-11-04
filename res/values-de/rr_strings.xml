@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptisches Feedback</string>
     <string name="now_playing_title">"Läuft gerade"</string>
+    <string name="doze_gesture_ambient_title">Umgebungsanzeige anzeigen</string>
+    <string name="doze_gesture_ambient_summary">Anzeige im Umgebungsmodus statt den Bildschirm vollständig einzuschalten</string>
+    <string name="gesture_wake_ambient">Umgebungsanzeige anzeigen</string>
+    <string name="gesture_wake">Vollständig aufwecken</string>
+    <string name="doze_gesture_vibrate_summary">Bei Aufruf dieser Geste vibrieren</string>
+    <string name="now_playing_summary">In der Nähe spielende Songs erkennen</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Povratne informacije</string>
     <string name="now_playing_title">"Trenutno se reproducira"</string>
+    <string name="doze_gesture_ambient_title">Prikaži ambijentalni prikaz</string>
+    <string name="doze_gesture_ambient_summary">Prikaži ambijentalni prikaz umjesto potpunog buđenja ekrana</string>
+    <string name="gesture_wake_ambient">Prikaži ambijentalni prikaz</string>
+    <string name="gesture_wake">Potpuno probudi</string>
+    <string name="doze_gesture_vibrate_summary">Vibriraj kada se pokrene ovaj pokret</string>
+    <string name="now_playing_summary">Prepoznaj pjesme koje se reproduciraju u blizini</string>
 </resources>

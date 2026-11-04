@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Snertiskynssvörun (haptic)</string>
     <string name="now_playing_title">"Í spilun"</string>
+    <string name="doze_gesture_ambient_title">Sýna umhverfisskjá</string>
+    <string name="doze_gesture_ambient_summary">Sýna umhverfisskjá í stað þess að kveikja fullkomlega á skjánum</string>
+    <string name="gesture_wake_ambient">Sýna umhverfisskjá</string>
+    <string name="gesture_wake">Vekja alveg</string>
+    <string name="doze_gesture_vibrate_summary">Titra þegar þessi bending er notuð</string>
+    <string name="now_playing_summary">Greina lög sem spila í nágrenninu</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Արագ արձագանք</string>
     <string name="now_playing_title">"Այժմ հնչում է"</string>
+    <string name="doze_gesture_ambient_title">Ցույց տալ Ambient</string>
+    <string name="doze_gesture_ambient_summary">Ցույց տալ Ambient Display-ը՝ էկրանը լրիվ չարթնացնելու փոխարեն</string>
+    <string name="gesture_wake_ambient">Ցույց տալ Ambient</string>
+    <string name="gesture_wake">Լրիվ արթնացնել</string>
+    <string name="doze_gesture_vibrate_summary">Թրթռալ, երբ այս ժեստն է կատարվում</string>
+    <string name="now_playing_summary">Նույնականացնել մոտակայքում նվագվող երգերը</string>
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">වටපිටා දර්ශනය පෙන්වන්න</string>
+    <string name="doze_gesture_ambient_summary">තිරය සම්පූර්ණයෙන් ක්‍රියාත්මක කිරීම වෙනුවට වටපිටා දර්ශනය පෙන්වන්න</string>
+    <string name="gesture_wake_ambient">වටපිටා දර්ශනය පෙන්වන්න</string>
+    <string name="gesture_wake">සම්පූර්ණයෙන් අවදි කරන්න</string>
+    <string name="doze_gesture_vibrate_title">ස්පර්ශ ප්‍රතිපෝෂණය</string>
+    <string name="doze_gesture_vibrate_summary">මෙම ඉංගිතය ක්‍රියාත්මක වන විට කම්පනය වන්න</string>
+    <string name="now_playing_title">දැන් වාදනය වෙමින්</string>
+    <string name="now_playing_summary">අවට වාදනය වන ගීත හඳුනා ගන්න</string>
+</resources>

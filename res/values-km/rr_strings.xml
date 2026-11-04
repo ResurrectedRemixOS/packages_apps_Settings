@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">បង្ហាញ Ambient</string>
+    <string name="doze_gesture_ambient_summary">បង្ហាញផ្ទាំង Ambient Display ជំនួសឲ្យការភ្ញាក់អេក្រង់ទាំងស្រុង</string>
+    <string name="gesture_wake_ambient">បង្ហាញ Ambient</string>
+    <string name="gesture_wake">ភ្ញាក់ពេញលេញ</string>
+    <string name="doze_gesture_vibrate_title">មតិត្រឡប់ញ័រ</string>
+    <string name="doze_gesture_vibrate_summary">ញ័រនៅពេលធ្វើចលនានេះ</string>
+    <string name="now_playing_title">កំពុងចាក់</string>
+    <string name="now_playing_summary">ស្គាល់បទចម្រៀងដែលកំពុងចាក់នៅជិតៗ</string>
+</resources>

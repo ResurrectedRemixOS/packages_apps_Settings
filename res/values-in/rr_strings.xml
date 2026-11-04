@@ -6,4 +6,6 @@
     <string name="gesture_wake">Bangun sepenuhnya</string>
     <string name="doze_gesture_vibrate_title">Tanggapan sentuhan</string>
     <string name="doze_gesture_vibrate_summary">Bergetar saat gerakan ini diaktifkan</string>
+    <string name="now_playing_title">Sedang diputar</string>
+    <string name="now_playing_summary">Kenali lagu yang diputar di sekitar</string>
 </resources>

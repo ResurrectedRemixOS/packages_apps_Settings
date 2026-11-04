@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Tindakbalas haptik</string>
+    <string name="doze_gesture_ambient_title">Tunjukkan Ambient</string>
+    <string name="doze_gesture_ambient_summary">Tunjukkan Paparan Ambient dan bukannya menghidupkan skrin sepenuhnya</string>
+    <string name="gesture_wake_ambient">Tunjukkan Ambient</string>
+    <string name="gesture_wake">Bangunkan sepenuhnya</string>
+    <string name="doze_gesture_vibrate_summary">Bergetar apabila gerak isyarat ini dicetuskan</string>
+    <string name="now_playing_title">Sedang Dimainkan</string>
+    <string name="now_playing_summary">Kenal pasti lagu yang dimainkan berdekatan</string>
 </resources>

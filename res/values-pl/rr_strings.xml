@@ -7,4 +7,5 @@
     <string name="doze_gesture_vibrate_title">Wibracja przy dotknięciu</string>
     <string name="doze_gesture_vibrate_summary">Wibracja po wywołaniu tego gestu</string>
     <string name="now_playing_title">"Co jest grane"</string>
+    <string name="now_playing_summary">Rozpoznawaj utwory grane w pobliżu</string>
 </resources>

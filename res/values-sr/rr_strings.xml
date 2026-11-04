@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Вибрација при додиру</string>
     <string name="now_playing_title">"Тренутно свира"</string>
+    <string name="doze_gesture_ambient_title">Прикажи Ambient</string>
+    <string name="doze_gesture_ambient_summary">Прикажи Ambient приказ уместо потпуног буђења екрана</string>
+    <string name="gesture_wake_ambient">Прикажи Ambient</string>
+    <string name="gesture_wake">Потпуно пробуди</string>
+    <string name="doze_gesture_vibrate_summary">Вибрирај када се ова радња активира</string>
+    <string name="now_playing_summary">Препознај песме које се репродукују у близини</string>
 </resources>

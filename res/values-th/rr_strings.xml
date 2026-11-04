@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">สั่นเมื่อแตะ</string>
     <string name="now_playing_title">"กำลังเล่น"</string>
+    <string name="doze_gesture_ambient_title">แสดง Ambient</string>
+    <string name="doze_gesture_ambient_summary">แสดงจอ Ambient Display แทนการปลุกหน้าจอเต็มรูปแบบ</string>
+    <string name="gesture_wake_ambient">แสดง Ambient</string>
+    <string name="gesture_wake">ปลุกเต็มรูปแบบ</string>
+    <string name="doze_gesture_vibrate_summary">สั่นเมื่อเรียกใช้ท่าทางนี้</string>
+    <string name="now_playing_summary">ระบุเพลงที่กำลังเล่นใกล้เคียง</string>
 </resources>

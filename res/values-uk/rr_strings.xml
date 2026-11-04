@@ -7,4 +7,5 @@
     <string name="doze_gesture_vibrate_title">Вібро-відгук</string>
     <string name="doze_gesture_vibrate_summary">Вібрувати, коли цей жест активується</string>
     <string name="now_playing_title">"Зараз грає"</string>
+    <string name="now_playing_summary">Розпізнавати пісні, що грають поруч</string>
 </resources>

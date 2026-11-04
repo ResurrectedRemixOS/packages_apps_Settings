@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Tagad atskaņo"</string>
+    <string name="doze_gesture_ambient_title">Rādīt apkārtējo displeju</string>
+    <string name="doze_gesture_ambient_summary">Rādīt apkārtējo displeju, nevis pilnībā ieslēgt ekrānu</string>
+    <string name="gesture_wake_ambient">Rādīt apkārtējo displeju</string>
+    <string name="gesture_wake">Pilnībā pamodināt</string>
+    <string name="doze_gesture_vibrate_title">Haptiskā atgriezeniskā saite</string>
+    <string name="doze_gesture_vibrate_summary">Vibrēt, kad tiek izmantots šis žests</string>
+    <string name="now_playing_summary">Identificēt apkārtnē atskaņotās dziesmas</string>
 </resources>

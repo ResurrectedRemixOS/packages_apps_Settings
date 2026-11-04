@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Reagimi haptik</string>
     <string name="now_playing_title">"Gjej këngën"</string>
+    <string name="doze_gesture_ambient_title">Shfaq Ambient</string>
+    <string name="doze_gesture_ambient_summary">Shfaq Ekranin Ambient në vend që të zgjohet plotësisht ekrani</string>
+    <string name="gesture_wake_ambient">Shfaq Ambient</string>
+    <string name="gesture_wake">Zgjo plotësisht</string>
+    <string name="doze_gesture_vibrate_summary">Vibro kur thirret ky gjest</string>
+    <string name="now_playing_summary">Identifiko këngët që luhen afër</string>
 </resources>

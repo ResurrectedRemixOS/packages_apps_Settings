@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptinen palaute</string>
     <string name="now_playing_title">"Musiikintunnistus"</string>
+    <string name="doze_gesture_ambient_title">Näytä Ambient</string>
+    <string name="doze_gesture_ambient_summary">Näytä Ambient Display näytön täydellisen herättämisen sijaan</string>
+    <string name="gesture_wake_ambient">Näytä Ambient</string>
+    <string name="gesture_wake">Herätä kokonaan</string>
+    <string name="doze_gesture_vibrate_summary">Värise, kun tämä ele suoritetaan</string>
+    <string name="now_playing_summary">Tunnista lähellä soivat kappaleet</string>
 </resources>

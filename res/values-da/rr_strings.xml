@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Berøringsvibration</string>
     <string name="now_playing_title">"Find sangen"</string>
+    <string name="doze_gesture_ambient_title">Vis Ambient</string>
+    <string name="doze_gesture_ambient_summary">Vis Ambient Display i stedet for helt at vække skærmen</string>
+    <string name="gesture_wake_ambient">Vis Ambient</string>
+    <string name="gesture_wake">Væk helt</string>
+    <string name="doze_gesture_vibrate_summary">Vibrer, når denne bevægelse udføres</string>
+    <string name="now_playing_summary">Identificér sange, der afspilles i nærheden</string>
 </resources>

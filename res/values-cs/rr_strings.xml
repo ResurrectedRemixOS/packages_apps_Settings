@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Hmatová odezva</string>
     <string name="now_playing_title">"Co to hraje"</string>
+    <string name="doze_gesture_ambient_title">Zobrazit Ambient</string>
+    <string name="doze_gesture_ambient_summary">Zobrazit Ambient Display místo úplného probuzení obrazovky</string>
+    <string name="gesture_wake_ambient">Zobrazit Ambient</string>
+    <string name="gesture_wake">Úplně probudit</string>
+    <string name="doze_gesture_vibrate_summary">Vibrovat při vyvolání tohoto gesta</string>
+    <string name="now_playing_summary">Rozpoznat hudbu hrající v okolí</string>
 </resources>

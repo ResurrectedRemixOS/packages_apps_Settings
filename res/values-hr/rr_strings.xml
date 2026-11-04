@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Dodirna povratna informacija</string>
     <string name="now_playing_title">"Upravo svira"</string>
+    <string name="doze_gesture_ambient_title">Prikaži Ambient</string>
+    <string name="doze_gesture_ambient_summary">Prikaži Ambient zaslon umjesto potpunog buđenja zaslona</string>
+    <string name="gesture_wake_ambient">Prikaži Ambient</string>
+    <string name="gesture_wake">Potpuno probudi</string>
+    <string name="doze_gesture_vibrate_summary">Vibriraj kad se aktivira ova gesta</string>
+    <string name="now_playing_summary">Prepoznaj pjesme koje se sviraju u blizini</string>
 </resources>

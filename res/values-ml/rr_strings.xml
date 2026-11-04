@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">ഹാപ്ടിക പ്രതികരണം</string>
     <string name="now_playing_title">"ഇപ്പോൾ കേൾക്കുന്നത്"</string>
+    <string name="doze_gesture_ambient_title">ആംബിയന്റ് കാണിക്കുക</string>
+    <string name="doze_gesture_ambient_summary">സ്ക്രീൻ പൂർണ്ണമായി ഉണർത്തുന്നതിന് പകരം ആംബിയന്റ് ഡിസ്‌പ്ലേ കാണിക്കുക</string>
+    <string name="gesture_wake_ambient">ആംബിയന്റ് കാണിക്കുക</string>
+    <string name="gesture_wake">പൂർണ്ണമായി ഉണർത്തുക</string>
+    <string name="doze_gesture_vibrate_summary">ഈ ജെസ്ചർ പ്രവർത്തിപ്പിക്കുമ്പോൾ വൈബ്രേറ്റ് ചെയ്യുക</string>
+    <string name="now_playing_summary">സമീപത്ത് പ്ലേ ചെയ്യുന്ന പാട്ടുകൾ തിരിച്ചറിയുക</string>
 </resources>

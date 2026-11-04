@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">ହାପ୍ଟିକ୍ ଫିଡବ୍ୟାକ୍</string>
     <string name="now_playing_title">"ଏବେ ଚାଲୁଛି"</string>
+    <string name="doze_gesture_ambient_title">ଆମ୍ବିଏଣ୍ଟ ଦେଖାନ୍ତୁ</string>
+    <string name="doze_gesture_ambient_summary">ସ୍କ୍ରିନକୁ ସମ୍ପୂର୍ଣ୍ଣ ଜାଗ୍ରତ କରିବା ବଦଳରେ ଆମ୍ବିଏଣ୍ଟ ଡିସପ୍ଲେ ଦେଖାନ୍ତୁ</string>
+    <string name="gesture_wake_ambient">ଆମ୍ବିଏଣ୍ଟ ଦେଖାନ୍ତୁ</string>
+    <string name="gesture_wake">ସମ୍ପୂର୍ଣ୍ଣ ଜାଗ୍ରତ କରନ୍ତୁ</string>
+    <string name="doze_gesture_vibrate_summary">ଏହି ଅଙ୍ଗଭଙ୍ଗୀ ସକ୍ରିୟ ହେଲେ ଭାଇବ୍ରେଟ କରନ୍ତୁ</string>
+    <string name="now_playing_summary">ନିକଟରେ ବାଜୁଥିବା ଗୀତ ଚିହ୍ନଟ କରନ୍ତୁ</string>
 </resources>

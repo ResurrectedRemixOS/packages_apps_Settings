@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">কম্পন প্রতিক্রিয়া</string>
     <string name="now_playing_title">"এখন চলছে"</string>
+    <string name="doze_gesture_ambient_title">অ্যাম্বিয়েন্ট ডিসপ্লে দেখান</string>
+    <string name="doze_gesture_ambient_summary">স্ক্রিন পুরোপুরি জাগানোর বদলে অ্যাম্বিয়েন্ট ডিসপ্লে দেখান</string>
+    <string name="gesture_wake_ambient">অ্যাম্বিয়েন্ট ডিসপ্লে দেখান</string>
+    <string name="gesture_wake">পুরোপুরি জাগান</string>
+    <string name="doze_gesture_vibrate_summary">এই ইশারাটি সক্রিয় হলে কম্পন করুন</string>
+    <string name="now_playing_summary">আশপাশে বাজতে থাকা গান শনাক্ত করুন</string>
 </resources>

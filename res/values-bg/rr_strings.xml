@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Вибрация при докосване (обратна връзка)</string>
     <string name="now_playing_title">"Сега слушате"</string>
+    <string name="doze_gesture_ambient_title">Показвай дисплея на готовност</string>
+    <string name="doze_gesture_ambient_summary">Показвай дисплея на готовност вместо пълно включване на екрана</string>
+    <string name="gesture_wake_ambient">Показвай дисплея на готовност</string>
+    <string name="gesture_wake">Пълно включване</string>
+    <string name="doze_gesture_vibrate_summary">Вибрирай при извикване на този жест</string>
+    <string name="now_playing_summary">Разпознавай песни, които се пускат наблизо</string>
 </resources>

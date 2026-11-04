@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">एम्बियन्ट देखाउनुहोस्</string>
+    <string name="doze_gesture_ambient_summary">स्क्रिन पूर्ण रूपमा नउठाई एम्बियन्ट डिस्प्ले देखाउनुहोस्</string>
+    <string name="gesture_wake_ambient">एम्बियन्ट देखाउनुहोस्</string>
+    <string name="gesture_wake">पूर्ण रूपमा जगाउनुहोस्</string>
+    <string name="doze_gesture_vibrate_title">हप्टिक प्रतिक्रिया</string>
+    <string name="doze_gesture_vibrate_summary">यो जेस्चर प्रयोग हुँदा कम्पन गराउनुहोस्</string>
+    <string name="now_playing_title">अहिले बजिरहेको</string>
+    <string name="now_playing_summary">नजिकै बजिरहेका गीतहरू पहिचान गर्नुहोस्</string>
+</resources>

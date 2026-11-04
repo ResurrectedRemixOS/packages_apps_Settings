@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">હેપ્ટિક પ્રતિસાદ</string>
     <string name="now_playing_title">"હમણાં વાગી રહ્યું છે"</string>
+    <string name="doze_gesture_ambient_title">એમ્બિયન્ટ બતાવો</string>
+    <string name="doze_gesture_ambient_summary">સ્ક્રીનને સંપૂર્ણપણે જગાડવાને બદલે એમ્બિયન્ટ ડિસ્પ્લે બતાવો</string>
+    <string name="gesture_wake_ambient">એમ્બિયન્ટ બતાવો</string>
+    <string name="gesture_wake">સંપૂર્ણપણે જગાડો</string>
+    <string name="doze_gesture_vibrate_summary">આ જેસ્ચર લાગુ થાય ત્યારે વાઇબ્રેટ કરો</string>
+    <string name="now_playing_summary">નજીકમાં વાગતાં ગીતો ઓળખો</string>
 </resources>

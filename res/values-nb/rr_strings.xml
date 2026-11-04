@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptisk tilbakemelding</string>
     <string name="now_playing_title">"Spilles nå"</string>
+    <string name="doze_gesture_ambient_title">Vis Alltid på</string>
+    <string name="doze_gesture_ambient_summary">Vis Alltid på-skjerm i stedet for å vekke skjermen helt</string>
+    <string name="gesture_wake_ambient">Vis Alltid på</string>
+    <string name="gesture_wake">Vekk helt</string>
+    <string name="doze_gesture_vibrate_summary">Vibrer når denne bevegelsen utføres</string>
+    <string name="now_playing_summary">Identifiser sanger som spilles i nærheten</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Hmatová spätná väzba</string>
     <string name="now_playing_title">"Čo to hrá"</string>
+    <string name="doze_gesture_ambient_title">Zobraziť Ambient</string>
+    <string name="doze_gesture_ambient_summary">Zobraziť Ambient displej namiesto úplného zobudenia obrazovky</string>
+    <string name="gesture_wake_ambient">Zobraziť Ambient</string>
+    <string name="gesture_wake">Úplne zobudiť</string>
+    <string name="doze_gesture_vibrate_summary">Vibrovať pri aktivovaní tohto gesta</string>
+    <string name="now_playing_summary">Rozpoznať skladby hrané v okolí</string>
 </resources>

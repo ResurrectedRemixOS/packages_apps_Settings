@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Допирни повратни информации</string>
+    <string name="doze_gesture_ambient_title">Прикажи Ambient</string>
+    <string name="doze_gesture_ambient_summary">Прикажи Ambient Display наместо целосно да се разбуди екранот</string>
+    <string name="gesture_wake_ambient">Прикажи Ambient</string>
+    <string name="gesture_wake">Целосно разбуди</string>
+    <string name="doze_gesture_vibrate_summary">Вибрирај кога ќе се користи ова движење</string>
+    <string name="now_playing_title">Моментално пуштено</string>
+    <string name="now_playing_summary">Препознавај песни што се пуштаат во близина</string>
 </resources>

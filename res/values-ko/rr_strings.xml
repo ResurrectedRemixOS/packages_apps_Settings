@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">햅틱 반응</string>
     <string name="now_playing_title">"나우 플레잉"</string>
+    <string name="doze_gesture_ambient_title">상시 표시 보기</string>
+    <string name="doze_gesture_ambient_summary">화면을 완전히 켜는 대신 상시 표시 화면을 보여줍니다</string>
+    <string name="gesture_wake_ambient">상시 표시 보기</string>
+    <string name="gesture_wake">완전히 켜기</string>
+    <string name="doze_gesture_vibrate_summary">이 제스처를 실행하면 진동</string>
+    <string name="now_playing_summary">주변에서 재생 중인 노래 식별</string>
 </resources>

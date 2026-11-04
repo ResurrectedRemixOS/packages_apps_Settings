@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Виброотклик</string>
     <string name="now_playing_title">"Что сейчас играет?"</string>
+    <string name="doze_gesture_ambient_title">Показывать режим ожидания</string>
+    <string name="doze_gesture_ambient_summary">Показывать экран ожидания вместо полного включения экрана</string>
+    <string name="gesture_wake_ambient">Показывать режим ожидания</string>
+    <string name="gesture_wake">Полностью включить</string>
+    <string name="doze_gesture_vibrate_summary">Вибрировать при выполнении этого жеста</string>
+    <string name="now_playing_summary">Распознавать песни, которые играют рядом</string>
 </resources>

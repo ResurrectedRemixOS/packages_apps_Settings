@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">ಸ್ಪಾರ್ಶ ಪ್ರತಿಕ್ರಿಯೆ</string>
+    <string name="doze_gesture_ambient_title">ಆಂಬಿಯೆಂಟ್ ತೋರಿಸಿ</string>
+    <string name="doze_gesture_ambient_summary">ಪರದೆಯನ್ನು ಪೂರ್ಣವಾಗಿ ಎಚ್ಚರಗೊಳಿಸುವ ಬದಲು ಆಂಬಿಯೆಂಟ್ ಡಿಸ್ಪ್ಲೇ ತೋರಿಸಿ</string>
+    <string name="gesture_wake_ambient">ಆಂಬಿಯೆಂಟ್ ತೋರಿಸಿ</string>
+    <string name="gesture_wake">ಪೂರ್ಣವಾಗಿ ಎಚ್ಚರಗೊಳಿಸಿ</string>
+    <string name="doze_gesture_vibrate_summary">ಈ ಸನ್ನೆ ಬಳಸಿದಾಗ ಕಂಪಿಸಿ</string>
+    <string name="now_playing_title">ಈಗ ಪ್ಲೇ ಆಗುತ್ತಿದೆ</string>
+    <string name="now_playing_summary">ಹತ್ತಿರದಲ್ಲಿ ಪ್ಲೇ ಆಗುತ್ತಿರುವ ಹಾಡುಗಳನ್ನು ಗುರುತಿಸಿ</string>
 </resources>

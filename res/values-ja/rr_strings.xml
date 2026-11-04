@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">タッチ操作バイブ</string>
     <string name="now_playing_title">"この曲なに？"</string>
+    <string name="doze_gesture_ambient_title">Ambient を表示</string>
+    <string name="doze_gesture_ambient_summary">画面を完全に点灯せず、Ambient ディスプレイを表示</string>
+    <string name="gesture_wake_ambient">Ambient を表示</string>
+    <string name="gesture_wake">完全に点灯</string>
+    <string name="doze_gesture_vibrate_summary">このジェスチャーの実行時に振動</string>
+    <string name="now_playing_summary">近くで再生中の曲を識別</string>
 </resources>

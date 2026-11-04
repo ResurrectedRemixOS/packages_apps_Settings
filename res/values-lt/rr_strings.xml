@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Liečiamasis atsiliepimas</string>
     <string name="now_playing_title">"Dabar leidžiama"</string>
+    <string name="doze_gesture_ambient_title">Rodyti laukimo režimą</string>
+    <string name="doze_gesture_ambient_summary">Rodyti laukimo ekraną vietoj visiško ekrano įjungimo</string>
+    <string name="gesture_wake_ambient">Rodyti laukimo režimą</string>
+    <string name="gesture_wake">Visiškai įjungti</string>
+    <string name="doze_gesture_vibrate_summary">Vibruoti, kai aktyvuojamas šis gestas</string>
+    <string name="now_playing_summary">Atpažinti netoliese grojančias dainas</string>
 </resources>

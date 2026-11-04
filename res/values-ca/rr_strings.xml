@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Resposta hàptica</string>
     <string name="now_playing_title">"Està sonant"</string>
+    <string name="doze_gesture_ambient_title">Mostra l\'Ambient</string>
+    <string name="doze_gesture_ambient_summary">Mostra la pantalla Ambient en lloc d\'encendre completament la pantalla</string>
+    <string name="gesture_wake_ambient">Mostra l\'Ambient</string>
+    <string name="gesture_wake">Encén completament</string>
+    <string name="doze_gesture_vibrate_summary">Vibra quan s\'invoca aquest gest</string>
+    <string name="now_playing_summary">Identifica les cançons que sonen a prop</string>
 </resources>

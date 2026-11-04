@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">ສະແດງ Ambient</string>
+    <string name="doze_gesture_ambient_summary">ສະແດງໜ້າຈໍ Ambient ແທນການປຸກໜ້າຈໍຂຶ້ນມາເຕັມຈໍ</string>
+    <string name="gesture_wake_ambient">ສະແດງ Ambient</string>
+    <string name="gesture_wake">ປຸກເຕັມຈໍ</string>
+    <string name="doze_gesture_vibrate_title">ຄວາມຮູ້ສຶກສັ່ນ</string>
+    <string name="doze_gesture_vibrate_summary">ສັ່ນເມື່ອໃຊ້ທ່າທາງນີ້</string>
+    <string name="now_playing_title">ກຳລັງຫຼິ້ນ</string>
+    <string name="now_playing_summary">ຈຳແນກເພງທີ່ກຳລັງຫຼິ້ນໃກ້ຄຽງ</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Ambient ပြရန်</string>
+    <string name="doze_gesture_ambient_summary">ဖန်သားပြင်ကို အပြည့်အဝ မနိုးဘဲ Ambient ဖော်ပြမှုကို ပြရန်</string>
+    <string name="gesture_wake_ambient">Ambient ပြရန်</string>
+    <string name="gesture_wake">အပြည့်အဝ နိုးရန်</string>
+    <string name="doze_gesture_vibrate_title">Haptic တုံ့ပြန်ချက်</string>
+    <string name="doze_gesture_vibrate_summary">ဤလက်ဟန်ကို အသုံးပြုသောအခါ တုန်ခါရန်</string>
+    <string name="now_playing_title">ယခုဖွင့်နေသည်</string>
+    <string name="now_playing_summary">အနီးရှိ ဖွင့်နေသော သီချင်းများကို ခွဲခြားရန်</string>
+</resources>

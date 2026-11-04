@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"አሁን በመጫወት ላይ"</string>
+    <string name="doze_gesture_ambient_title">የአከባቢ ማሳያን አሳይ</string>
+    <string name="doze_gesture_ambient_summary">ማያ ገጹን ሙሉ በሙሉ ከማንቃት ይልቅ የአከባቢ ማሳያን አሳይ</string>
+    <string name="gesture_wake_ambient">የአከባቢ ማሳያን አሳይ</string>
+    <string name="gesture_wake">ሙሉ በሙሉ አንቃ</string>
+    <string name="doze_gesture_vibrate_title">የንዝረት ምላሽ</string>
+    <string name="doze_gesture_vibrate_summary">ይህ የእጅ ምልክት በሚነሳበት ጊዜ ንዘር</string>
+    <string name="now_playing_summary">በአቅራቢያ የሚጫወቱ ዘፈኖችን ለይ</string>
 </resources>

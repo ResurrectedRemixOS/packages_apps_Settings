@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">స్పర్శతో అభిప్రాయం</string>
+    <string name="doze_gesture_ambient_title">యాంబియంట్ చూపించు</string>
+    <string name="doze_gesture_ambient_summary">స్క్రీన్‌ను పూర్తిగా మేల్కొలపకుండా యాంబియంట్ డిస్‌ప్లేను చూపించు</string>
+    <string name="gesture_wake_ambient">యాంబియంట్ చూపించు</string>
+    <string name="gesture_wake">పూర్తిగా మేల్కొలపండి</string>
+    <string name="doze_gesture_vibrate_summary">ఈ సైగ ప్రేరేపించబడినప్పుడు వైబ్రేట్ చేయండి</string>
+    <string name="now_playing_title">ప్రస్తుతం ప్లే అవుతోంది</string>
+    <string name="now_playing_summary">సమీపంలో ప్లే అవుతున్న పాటలను గుర్తించండి</string>
 </resources>

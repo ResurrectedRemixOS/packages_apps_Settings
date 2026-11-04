@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Feedback tattile</string>
+    <string name="doze_gesture_ambient_title">Mostra Always On Display</string>
+    <string name="doze_gesture_ambient_summary">Mostra Ambient Display invece di riattivare completamente lo schermo</string>
+    <string name="gesture_wake_ambient">Mostra Always On Display</string>
+    <string name="gesture_wake">Riattiva completamente</string>
+    <string name="doze_gesture_vibrate_summary">Vibra quando viene eseguito questo gesto</string>
+    <string name="now_playing_title">Riproduzione in corso</string>
+    <string name="now_playing_summary">Identifica i brani in riproduzione nelle vicinanze</string>
 </resources>

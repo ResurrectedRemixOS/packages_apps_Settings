@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Erantzun haptikoa</string>
     <string name="now_playing_title">"Orain erreproduzitzen"</string>
+    <string name="doze_gesture_ambient_title">Erakutsi Ingurune-bistaratzea</string>
+    <string name="doze_gesture_ambient_summary">Erakutsi Ingurune-bistaratzea pantaila guztiz piztu beharrean</string>
+    <string name="gesture_wake_ambient">Erakutsi Ingurune-bistaratzea</string>
+    <string name="gesture_wake">Guztiz piztu</string>
+    <string name="doze_gesture_vibrate_summary">Dardara keinu hau egitean</string>
+    <string name="now_playing_summary">Inguruan entzuten diren abestiak identifikatu</string>
 </resources>

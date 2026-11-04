@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Nagpi-play Ngayon"</string>
+    <string name="doze_gesture_ambient_title">Ipakita ang Ambient</string>
+    <string name="doze_gesture_ambient_summary">Ipakita ang Ambient Display sa halip na ganap na buksan ang screen</string>
+    <string name="gesture_wake_ambient">Ipakita ang Ambient</string>
+    <string name="gesture_wake">Ganap na gisingin</string>
+    <string name="doze_gesture_vibrate_title">Haptic feedback</string>
+    <string name="doze_gesture_vibrate_summary">Mag-vibrate kapag ginamit ang galaw na ito</string>
+    <string name="now_playing_summary">Tukuyin ang mga kantang tumutugtog sa malapit</string>
 </resources>

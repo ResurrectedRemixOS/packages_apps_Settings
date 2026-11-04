@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Resposta háptica</string>
     <string name="now_playing_title">"Está soando"</string>
+    <string name="doze_gesture_ambient_title">Mostrar pantalla ambiente</string>
+    <string name="doze_gesture_ambient_summary">Mostrar a pantalla ambiente en lugar de acender completamente a pantalla</string>
+    <string name="gesture_wake_ambient">Mostrar pantalla ambiente</string>
+    <string name="gesture_wake">Acender por completo</string>
+    <string name="doze_gesture_vibrate_summary">Vibrar ao activar este xesto</string>
+    <string name="now_playing_summary">Identificar canción que soa preto</string>
 </resources>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Reacție tactilă</string>
+    <string name="doze_gesture_ambient_title">Afișează Ambient</string>
+    <string name="doze_gesture_ambient_summary">Afișează ecranul Ambient în loc să trezești complet ecranul</string>
+    <string name="gesture_wake_ambient">Afișează Ambient</string>
+    <string name="gesture_wake">Trezește complet</string>
+    <string name="doze_gesture_vibrate_summary">Vibrați când se activează acest gest</string>
+    <string name="now_playing_title">Se redă acum</string>
+    <string name="now_playing_summary">Identifică melodiile care se redau în apropiere</string>
 </resources>

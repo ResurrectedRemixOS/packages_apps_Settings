@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">स्पर्शाने दिलेला अभिप्राय</string>
+    <string name="doze_gesture_ambient_title">ॲम्बियंट दाखवा</string>
+    <string name="doze_gesture_ambient_summary">स्क्रीन पूर्णपणे जागी करण्याऐवजी ॲम्बियंट डिस्प्ले दाखवा</string>
+    <string name="gesture_wake_ambient">ॲम्बियंट दाखवा</string>
+    <string name="gesture_wake">पूर्णपणे जागे करा</string>
+    <string name="doze_gesture_vibrate_summary">हा गेश्चर वापरल्यावर व्हायब्रेट करा</string>
+    <string name="now_playing_title">आता वाजत आहे</string>
+    <string name="now_playing_summary">जवळपास वाजणारी गाणी ओळखा</string>
 </resources>

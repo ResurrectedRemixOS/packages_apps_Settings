@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptiese terugvoer</string>
     <string name="now_playing_title">"Wat Speel"</string>
+    <string name="doze_gesture_ambient_title">Wys Ambient</string>
+    <string name="doze_gesture_ambient_summary">Wys Ambient-vertoning in plaas van die skerm volledig te ontwaak</string>
+    <string name="gesture_wake_ambient">Wys Ambient</string>
+    <string name="gesture_wake">Ontwaak volledig</string>
+    <string name="doze_gesture_vibrate_summary">Vibreer wanneer hierdie gebaar geaktiveer word</string>
+    <string name="now_playing_summary">Identifiseer liedjies wat naby speel</string>
 </resources>

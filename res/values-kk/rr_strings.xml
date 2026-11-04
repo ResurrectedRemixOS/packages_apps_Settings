@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Ambient көрсету</string>
+    <string name="doze_gesture_ambient_summary">Экранды толық оятудың орнына Ambient дисплейін көрсету</string>
+    <string name="gesture_wake_ambient">Ambient көрсету</string>
+    <string name="gesture_wake">Толық ояту</string>
+    <string name="doze_gesture_vibrate_title">Хаптикалық кері байланыс</string>
+    <string name="doze_gesture_vibrate_summary">Бұл қимыл орындалғанда діріл</string>
+    <string name="now_playing_title">Қазір ойнатылып жатыр</string>
+    <string name="now_playing_summary">Жақын маңда ойнап тұрған әндерді анықтау</string>
+</resources>

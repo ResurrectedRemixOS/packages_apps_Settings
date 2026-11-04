@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Hozir ijro etilmoqda"</string>
+    <string name="doze_gesture_ambient_title">Ambient ko\'rinishni ko\'rsatish</string>
+    <string name="doze_gesture_ambient_summary">Ekranni to\'liq uyg\'otish o\'rniga Ambient ko\'rinishni ko\'rsatish</string>
+    <string name="gesture_wake_ambient">Ambient ko\'rinishni ko\'rsatish</string>
+    <string name="gesture_wake">To\'liq uyg\'otish</string>
+    <string name="doze_gesture_vibrate_title">Haptik javob</string>
+    <string name="doze_gesture_vibrate_summary">Bu ishora bajarilganda tebranish</string>
+    <string name="now_playing_summary">Atrofda ijro etilayotgan qo\'shiqlarni aniqlash</string>
 </resources>

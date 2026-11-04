@@ -6,4 +6,5 @@
     <string name="gesture_wake">Ativar totalmente</string>
     <string name="doze_gesture_vibrate_title">Vibrar ao tocar</string>
     <string name="now_playing_title">"A tocar"</string>
+    <string name="now_playing_summary">Identificar músicas a tocar por perto</string>
 </resources>

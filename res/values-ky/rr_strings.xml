@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="now_playing_title">"Эмне ойноп жатат?"</string>
+    <string name="doze_gesture_ambient_title">Ambient көрсөтүү</string>
+    <string name="doze_gesture_ambient_summary">Экранды толук ойготкуланын ордуна Ambient Display көрсөтүү</string>
+    <string name="gesture_wake_ambient">Ambient көрсөтүү</string>
+    <string name="gesture_wake">Толук ойготуу</string>
+    <string name="doze_gesture_vibrate_title">Сезгич пикир</string>
+    <string name="doze_gesture_vibrate_summary">Бул жаңсоо иштетилгенде титирөө</string>
+    <string name="now_playing_summary">Жакын жерде ойнотулуп жаткан ырларды аныктоо</string>
 </resources>

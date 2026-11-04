@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Haptiline tagasiside</string>
     <string name="now_playing_title">"Hetkel mängimas"</string>
+    <string name="doze_gesture_ambient_title">Kuva Ambient</string>
+    <string name="doze_gesture_ambient_summary">Kuva Ambient Display ekraani täieliku äratamise asemel</string>
+    <string name="gesture_wake_ambient">Kuva Ambient</string>
+    <string name="gesture_wake">Täielikult äratamine</string>
+    <string name="doze_gesture_vibrate_summary">Vibreeri selle žesti kasutamisel</string>
+    <string name="now_playing_summary">Tuvasta läheduses esitatavad laulud</string>
 </resources>

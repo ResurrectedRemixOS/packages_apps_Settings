@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">Toxunuş əks əlaqəsi</string>
     <string name="now_playing_title">"İndi Efirdə"</string>
+    <string name="doze_gesture_ambient_title">Ətraf ekranı göstərin</string>
+    <string name="doze_gesture_ambient_summary">Ekranı tam oyatmaq əvəzinə Ətraf Ekranını göstərin</string>
+    <string name="gesture_wake_ambient">Ətraf ekranı göstərin</string>
+    <string name="gesture_wake">Tam oyatmaq</string>
+    <string name="doze_gesture_vibrate_summary">Bu jest işə salındıqda vibrasiya etsin</string>
+    <string name="now_playing_summary">Yaxınlıqda çalınan mahnıları müəyyən edin</string>
 </resources>

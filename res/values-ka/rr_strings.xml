@@ -2,4 +2,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="doze_gesture_vibrate_title">საპასუხო შეგრძნება</string>
     <string name="now_playing_title">"რა უკრავს"</string>
+    <string name="doze_gesture_ambient_title">გარემოს ეკრანის ჩვენება</string>
+    <string name="doze_gesture_ambient_summary">ეკრანის სრულად ჩართვის ნაცვლად გარემოს ეკრანის ჩვენება</string>
+    <string name="gesture_wake_ambient">გარემოს ეკრანის ჩვენება</string>
+    <string name="gesture_wake">სრულად ჩართვა</string>
+    <string name="doze_gesture_vibrate_summary">ვიბრაცია ამ ჟესტის გააქტიურებისას</string>
+    <string name="now_playing_summary">მიმდებარედ დაკვრადი სიმღერების ამოცნობა</string>
 </resources>

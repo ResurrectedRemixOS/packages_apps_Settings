@@ -7,4 +7,5 @@
     <string name="doze_gesture_vibrate_title">Retorno tátil</string>
     <string name="doze_gesture_vibrate_summary">Vibrar quando este gesto for invocado</string>
     <string name="now_playing_title">"Tocando agora"</string>
+    <string name="now_playing_summary">Identificar músicas tocando por perto</string>
 </resources>
