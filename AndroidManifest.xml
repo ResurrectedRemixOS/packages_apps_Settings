@@ -6413,6 +6413,10 @@
                   android:exported="false"
                   android:label="@string/remixer_qs_style"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.SettingsStyleActivity"
+                  android:exported="false"
+                  android:label="@string/remixer_settings_style"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.ClockFaceActivity"
                   android:exported="false"
                   android:label="@string/remixer_clock_faces"
