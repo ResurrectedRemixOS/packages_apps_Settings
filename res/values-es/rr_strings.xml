@@ -6,4 +6,6 @@
     <string name="gesture_wake">Activar completamente</string>
     <string name="doze_gesture_vibrate_title">Respuesta háptica</string>
     <string name="now_playing_title">"Está sonando"</string>
+    <string name="doze_gesture_vibrate_summary">Vibrar al invocar este gesto</string>
+    <string name="now_playing_summary">Identificar canciones cercanas</string>
 </resources>
