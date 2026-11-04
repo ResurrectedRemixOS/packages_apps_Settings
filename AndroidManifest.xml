@@ -6456,6 +6456,10 @@
                   android:exported="false"
                   android:label="@string/haptic_remix_title"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.stage.LockStageActivity"
+                  android:exported="false"
+                  android:label="@string/lock_stage_title"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
