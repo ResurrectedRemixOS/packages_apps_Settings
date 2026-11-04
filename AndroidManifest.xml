@@ -6452,6 +6452,10 @@
                   android:exported="false"
                   android:label="@string/quick_launch_title"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.haptics.HapticRemixActivity"
+                  android:exported="false"
+                  android:label="@string/haptic_remix_title"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
