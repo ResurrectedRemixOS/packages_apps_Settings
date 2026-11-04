@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Csak a \'Környezeti\'</string>
+    <string name="doze_gesture_ambient_summary">A képernyő teljes felébresztése helyett a \'Környezeti kijelző\' megjelenítése</string>
+    <string name="gesture_wake_ambient">Csak a \'Környezeti\'</string>
+    <string name="gesture_wake">Teljes ébresztés</string>
+    <string name="doze_gesture_vibrate_title">Érintési visszajelzés</string>
+    <string name="doze_gesture_vibrate_summary">Rezgő visszajelzés, amikor ezt a vezérlőt aktiválják</string>
+</resources>

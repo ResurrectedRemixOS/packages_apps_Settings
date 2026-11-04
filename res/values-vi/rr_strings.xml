@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Hiển thị màn hình thoáng</string>
+    <string name="doze_gesture_ambient_summary">Hiển thị màn hình xem nhanh thay vì đánh thức hoàn toàn</string>
+    <string name="gesture_wake_ambient">Hiển thị màn hình thoáng</string>
+    <string name="gesture_wake">Đánh thức hoàn toàn</string>
+    <string name="doze_gesture_vibrate_title">Phản hồi xúc giác</string>
+    <string name="doze_gesture_vibrate_summary">Rung khi thực hiện cử chỉ</string>
+    <string name="now_playing_title">"Phát hiện nhạc"</string>
+</resources>

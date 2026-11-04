@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Mostrar tela ambiente</string>
+    <string name="doze_gesture_ambient_summary">Mostrar a tela ambiente ao invés de ativar a tela completamente</string>
+    <string name="gesture_wake_ambient">Mostrar tela ambiente</string>
+    <string name="gesture_wake">Acordar totalmente</string>
+    <string name="doze_gesture_vibrate_title">Retorno tátil</string>
+    <string name="doze_gesture_vibrate_summary">Vibrar quando este gesto for invocado</string>
+    <string name="now_playing_title">"Tocando agora"</string>
+</resources>

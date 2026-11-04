@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Mostrar ambiente</string>
+    <string name="doze_gesture_ambient_summary">Mostrar la pantalla ambiente en lugar de activar completamente la pantalla</string>
+    <string name="gesture_wake_ambient">Mostrar ambiente</string>
+    <string name="gesture_wake">Activar completamente</string>
+    <string name="doze_gesture_vibrate_title">Respuesta háptica</string>
+    <string name="now_playing_title">"Está sonando"</string>
+</resources>

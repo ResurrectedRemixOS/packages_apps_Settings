@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Показати Активний екран</string>
+    <string name="doze_gesture_ambient_summary">Показати Активний екран замість повного пробудження екрану</string>
+    <string name="gesture_wake_ambient">Показати Активний екран</string>
+    <string name="gesture_wake">Повністю пробудження</string>
+    <string name="doze_gesture_vibrate_title">Вібро-відгук</string>
+    <string name="doze_gesture_vibrate_summary">Вібрувати, коли цей жест активується</string>
+    <string name="now_playing_title">"Зараз грає"</string>
+</resources>

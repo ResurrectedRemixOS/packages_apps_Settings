@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Montrer l\'affichage ambiant</string>
+    <string name="doze_gesture_ambient_summary">Montrer l\'affichage ambiant au lieu de réveiller complètement l\'écran</string>
+    <string name="gesture_wake_ambient">Montrer l\'affichage ambiant</string>
+    <string name="gesture_wake">Réveil complet</string>
+    <string name="doze_gesture_vibrate_title">Retour haptique</string>
+    <string name="now_playing_title">"En écoute"</string>
+</resources>

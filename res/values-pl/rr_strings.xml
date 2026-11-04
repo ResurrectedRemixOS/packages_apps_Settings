@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="doze_gesture_ambient_title">Pokaż ekran otoczenia</string>
+    <string name="doze_gesture_ambient_summary">Pokaż ekran otoczenia, zamiast wybudzać ekran</string>
+    <string name="gesture_wake_ambient">Pokaż ekran otoczenia</string>
+    <string name="gesture_wake">Pełne wybudzenie</string>
+    <string name="doze_gesture_vibrate_title">Wibracja przy dotknięciu</string>
+    <string name="doze_gesture_vibrate_summary">Wibracja po wywołaniu tego gestu</string>
+    <string name="now_playing_title">"Co jest grane"</string>
+</resources>
