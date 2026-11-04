@@ -239,6 +239,15 @@
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
         </activity-alias>
 
+        <!-- RR: Remix Modes. SystemUI asks for a Look when a Mode turns on or off. -->
+        <receiver android:name="com.resurrection.settings.modes.LookReceiver"
+            android:exported="true"
+            android:permission="android.permission.STATUS_BAR_SERVICE">
+            <intent-filter>
+                <action android:name="com.resurrection.settings.APPLY_LOOK"/>
+            </intent-filter>
+        </receiver>
+
         <receiver android:name=".SettingsInitialize"
             android:exported="true">
             <intent-filter>
