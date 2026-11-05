@@ -26,7 +26,7 @@ import android.provider.Settings;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.android.internal.util.android.Utils;
+import com.android.internal.util.rr.Utils;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
