@@ -6461,6 +6461,11 @@
                   android:label="@string/ring_sync_title"
                   android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+        <activity android:name="com.resurrection.settings.SnakeActivity"
+                  android:exported="false"
+                  android:label="@string/snake_title"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
         <activity android:name="com.resurrection.settings.QuickLaunchActivity"
                   android:exported="false"
                   android:label="@string/quick_launch_title"
