@@ -128,6 +128,7 @@ settings_android_library {
         "Settings-change-ids",
         "SettingsLib",
         "RRWallpapers-res",
+        "RRChargingViewsLib",
         "SettingsLibActivityEmbedding",
         "SettingsLibService",
         "aconfig_settings_flags_lib",

@@ -6417,6 +6417,14 @@
                   android:exported="false"
                   android:label="@string/remixer_qs_style"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.charging.ChargingAnimationActivity"
+                  android:exported="false"
+                  android:label="@string/charging_animation_title"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.charging.ChargingEffectsActivity"
+                  android:exported="false"
+                  android:label="@string/charging_effects_title"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.IconStyleActivity"
                   android:exported="false"
                   android:label="@string/sb_icons_category"
