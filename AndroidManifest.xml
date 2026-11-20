@@ -6425,6 +6425,10 @@
                   android:exported="false"
                   android:label="@string/charging_effects_title"
                   android:theme="@style/Theme.Settings.NoActionBar" />
+        <activity android:name="com.resurrection.settings.volume.VolumePanelActivity"
+                  android:exported="false"
+                  android:label="@string/volume_page_title"
+                  android:theme="@style/Theme.Settings.NoActionBar" />
         <activity android:name="com.resurrection.settings.IconStyleActivity"
                   android:exported="false"
                   android:label="@string/sb_icons_category"
